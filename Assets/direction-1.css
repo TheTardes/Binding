@@ -94,20 +94,46 @@ h1 {
 	margin-block: 2rem;
 }
 
-.rectangle-outside{
+
+.rectangle{
 	border: 2px solid;
 	color: black;
 	width: 100%;
 	height: 12rem;
 	padding: 2.25rem;
+
+	&>.rectangle-inside{
+		border: 2px solid;
+		color: black;
+		width: 100%;
+		height: 100%;
+	}
 }
 
-.rectangle-inside{
-	border: 2px solid;
+.dark-rectangles{
 	color: black;
-	width: 100%;
-	height: 100%;
+	background-color: black;
+	padding: 0.3rem;
+	width: fit-content;
+	height: fit-content;
 }
+
+.text-xxs{
+	font-size: 0.75rem;
+}
+
+.navigation {
+	display: flex;
+
+	&>ul{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: flex-start;
+		gap: 0.125rem;
+	}
+}
+
 
 
 
