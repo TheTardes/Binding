@@ -106,13 +106,7 @@ h1 {
 	}
 }
 
-.dark-rectangles{
-	color: black;
-	background-color: black;
-	padding: 0.3rem;
-	width: fit-content;
-	height: fit-content;
-}
+
 
 .text-xxs{
 	font-size: 0.75rem;
