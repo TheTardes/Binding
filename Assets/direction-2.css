@@ -93,6 +93,7 @@ h1 {
 
 	&>li {
 		width: fit-content;
+		text-align: center;
 		padding-inline: 12px;
 		padding-block:10px;
 		font-size: 16px;
