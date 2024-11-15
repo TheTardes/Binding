@@ -1,5 +1,3 @@
-
-
 .font-Laila {
 	font-family: "Laila", serif;
 }
@@ -11,16 +9,49 @@
 	font-style: normal;
 }
 
-:root{
-	font-size:16px;
+:root {
+	font-size: 16px;
 }
 
-.padding{
-	padding-inline: 25px;
+.padding {
+	padding-inline: 20px;
 }
 
-.background-red{
-	background-color:  #D94848;}
+.background-red {
+	background-color: #D94848;
+}
+
+nav{
+	padding-bottom: 32px;
+	padding-top:25px;
+
+	align-content: center;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.text-color-white{
+	color: white;
+}
+
+.text-lg{
+	font-size: 24px;
+	line-height: 34px;
+	text-align: center;
+}
+
+.highlight{
+	
+	padding: 3px;
+	border: 1px solid tomato;
+	font-style: italic;
+
+
+	
+}
+
 
 h1 {
 	font-size: 2.3rem;
@@ -29,19 +60,48 @@ h1 {
 	padding: 25px;
 }
 
-.background-grid{
+.background-grid {
 	background-size: 10px 10px;
-	background-image:  linear-gradient(to left, rgb(238, 235, 235) 1px, transparent 1px),
-    linear-gradient(to bottom, rgb(234, 230, 230) 1px, transparent 1px);
+	background-image: linear-gradient(to left, rgb(238, 235, 235) 1px, transparent 1px),
+		linear-gradient(to bottom, rgb(234, 230, 230) 1px, transparent 1px);
 }
 
-.container-section{
-	padding-inline: 20px;
+.container-section {
+
 	border-bottom: 2px solid black;
 	padding-block: 32px;
 
-	&>p{
+	&>p {
 		margin-top: 20px;
+
+	}
+}
+
+
+
+.text-uppercase{
+	text-transform: uppercase;
+}
+
+.navigation-buttons {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding-top: 12px;
+
+
+
+	&>li {
+		width: fit-content;
+		padding-inline: 12px;
+		padding-block:10px;
+		font-size: 16px;
+		font-weight: 600;
+
+		background-color: white;
+		border-radius: 2px;
+
+		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
 	}
 }
@@ -52,39 +112,48 @@ h1 {
 }
 
 .text-quotes {
-	font-size:20px;
-	line-height: 30px;
-	font-weight: bold;
-	font-style:italic;
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 700;
+	font-style: italic;
 }
 
 
-.floating-quotes{
-	
-	margin-inline: 25px;
-	margin-blovk
-	
-	
-	& :nth-of-type(2n){
+.floating-quotes {
+
+	border-bottom: 2px solid black;
+	padding-inline: 3rem;
+	padding-block: 4.1rem;
+
+
+
+	& :nth-of-type(2n) {
 		transform: rotate(-6deg);
 	}
-	
-	& :nth-of-type(2n +1){
+
+	& :nth-of-type(2n +1) {
 		transform: rotate(6deg);
 	}
-	
-	&>p{
+
+	&>p {
 		position: relative;
+
 		&:hover {
 			z-index: 1;
 			transform: none;
 		}
+
 		border-radius: 12px;
 		background-color: white;
-		padding-inline: 16px;
-		padding-block: 10px;
+		padding-inline: 20px;
+		padding-block: 12px;
 
-		margin-top: 12px;
 
-		box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;	}
+		box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px,
+		rgba(0, 0, 0, 0.07) 0px 2px 4px,
+		rgba(0, 0, 0, 0.07) 0px 4px 8px,
+		rgba(0, 0, 0, 0.07) 0px 8px 16px,
+		rgba(0, 0, 0, 0.07) 0px 16px 32px,
+		rgba(0, 0, 0, 0.07) 0px 32px 64px;
+	}
 }
