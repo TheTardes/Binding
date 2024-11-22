@@ -211,3 +211,21 @@ footer {
 	}
 }
 
+
+@media (min-width: 1440px) {
+
+	:root {
+
+	
+		font-size: 20px;
+		line-height: 30px;
+
+	}
+
+	body{
+		max-width: 1300px;
+		margin: auto;
+	}
+
+
+}

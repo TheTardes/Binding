@@ -4,9 +4,9 @@
 h1 {
 	margin-inline: 20px;
 	width: fit-content;
-	padding-left: 0.875rem;
-	padding-right: 0.875rem;
-	padding-block: 1.25rem;
+	padding: left 14px;;
+	padding-right: 14px;
+	padding-block: 20px;
 	border-top: 2px solid var(--black);
 	border-right: 2px solid var(--black);
 	border-left: 2px solid var(--black);
@@ -133,3 +133,16 @@ article{
 	}
 }
 
+
+@media (min-width: 1440px) {
+
+h1{
+	font-size: 60px;
+	line-height: 80px;
+
+	max-width: 876px;
+
+	padding: 42px;
+}
+
+}
