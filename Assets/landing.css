@@ -1,0 +1,57 @@
+.top-12 {
+	margin-top: 12px;
+	display: block;
+}
+
+h1 {
+	padding-inline: 20px;
+	text-align: center;
+	margin-bottom: 96px;
+	margin-top: 24px;
+
+	font-size: 35px;
+	line-height: 47px;
+
+	& .weird-line {
+		margin-top: 12px;
+		height: 2px;
+		width: 100%;
+		background-color: var(--black);
+		display: block;
+		transform: rotate(-2.17deg);
+	}
+
+	& .slider {
+		margin-top: 14px;
+		width: 100%;
+
+		&::-webkit-slider-thumb {
+			-webkit-appearance: none;
+			appearance: none;
+			width: 25px;
+			height: 25px;
+			background: transparent;
+			border: 1px solid var(--black);
+			border-radius: 50%;
+			cursor: pointer;
+		}
+	}
+}
+
+.h2-landing {
+
+	border-bottom: 1px solid var(--black);
+	padding-bottom: 12px;
+
+	font-size: 20px;
+	line-height: 27px;
+}
+
+.container-h2 {
+	margin-bottom: 56px;
+	padding-inline: 20px;
+
+	&>p{
+		margin-top: 20px;
+	}
+}
