@@ -20,17 +20,12 @@ h1 {
 	color: white;
 }
 
-.lines-together {
+/* .lines-together {
 	width: 100%;
 	display: flex;
 	align-items: center;
 }
 
-.double-line{
-	border-top: 2px solid black;
-	border-bottom: 2px solid black;
-	height: 0.8rem;
-}
 
 .line-horizontal {
 	width: 100%;
@@ -42,9 +37,14 @@ h1 {
 	background-color: black;
 	width: 2px;
 	height: 100%;
+} */
+
+
+.double-line{
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	height: 0.8rem;
 }
-
-
 
 .text-sm {
 	font-size: 16px;
@@ -125,14 +125,14 @@ h1 {
 }
 
 
-.author-name {
+/* .author-name {
 	display: flex;
 	justify-content: space-between;
 	gap: 1rem;
 	width: 80%;
 	margin-inline: auto;
 	text-wrap: nowrap;
-}
+} */
 
 
 .uppercase {
