@@ -23,7 +23,7 @@ h3 {
 
 h1 {
 	font-size: 36px;
-	font-family: var();
+	font-family: var(--dec-font);
 }
 
 nav {
@@ -167,8 +167,8 @@ quote {
 
 .table-of-contents {
 
-	border-top: 1px solid var(--black);
-	border-bottom: 1px solid var(--black);
+	/* border-top: 1px solid var(--black);
+	border-bottom: 1px solid var(--black); */
 
 	margin-top: 30px;
 	margin-bottom: 10px;
@@ -212,20 +212,42 @@ footer {
 }
 
 
-@media (min-width: 1440px) {
-
-	:root {
+@media (min-width: 1512px) {
 
 	
+
+	.p-size-xs{
+		max-width: 630px;
+	}
+
+	.p-size-m{
+		max-width: 840px;
+	}
+
+	:root {
 		font-size: 20px;
-		line-height: 30px;
+		line-height: 34px;
+
 
 	}
 
 	body{
-		max-width: 1300px;
+		max-width: 1346px;
 		margin: auto;
 	}
+
+	.block-quotes{
+		border: solid 1px var(--black);
+		padding: 40px;
+		margin-block: 24px;
+	}
+
+
+	
+
+	
+
+
 
 
 }
