@@ -89,6 +89,55 @@ h1 {
 	line-height: 32px;
 }
 
+.relative{
+	position: relative;
+}
+
+.dropdown {
+
+
+	& aside {
+	  display: none;
+  
+	  position: absolute;
+	  top: 100%;
+	  left: 0;
+	  
+	  /* transform: translateX(-80%); */
+	  width: 1296px;
+  
+	  background: var(--white);
+	  border: 1px solid var(--black);
+	  padding: 16px;
+  
+	  text-align: left;
+  
+	  & h2 {
+		font-size: 1.5rem;
+		line-height: 2;
+	  }
+	  & h3 {
+		font-size: 1rem;
+		line-height: 2;
+	  }
+	  & p {
+		font-size: 0.875rem;
+		line-height: 2;
+	  }
+  
+	  & button {
+		font-size: 1rem;
+		line-height: 2;
+		text-align: center;
+		width: 100%;
+		border: 1px solid black;
+		border-radius: 8px;
+	  }
+	}
+	&:hover aside {
+	  display: block;
+	}
+  }
 
 
 @media (min-width: 1512px) {
@@ -147,13 +196,14 @@ h1 {
 	.align-2 {
 		margin-left: auto;
 		margin-top: 56px;
+		z-index: 2;
 	}
 
 	.align-3 {
 		display: flex;
 		flex-direction: row;
 		gap: 50px;
-		margin-left: 20%;
+		padding-left: 20%;
 		margin-top: 56px;
 	}
 
