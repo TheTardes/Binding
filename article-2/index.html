@@ -3,100 +3,421 @@
 <head>
 	<title>Binding</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link href="https://typography-interaction-2425.github.io/assets/reset.css" rel="stylesheet">
-	<link href="Assets/common.css" rel="stylesheet">
-	<link href="Assets/direction-1.css" rel="stylesheet">
+
+	<!-- css files -->
+	<link href="../Assets/common.css" rel="stylesheet">
+	<link href="../Assets/reset.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+
+	<!-- fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-	<header class="background-white">
+	<header>
 
-		<nav class="navigation bottom-20 background-red">
-			<ul class="text-xxs">
-				<li class="dark-rectangles"><a>The Modernist Grid</a></li>
-				<li class="dark-rectangles"><a>The Cult of Ugly</a></li>
-				<li class="dark-rectangles"><a>Towards Complex Simplicity</a></li>
+		<nav>
+			<a class="uppercase" href="index.html">
+				<span class="square-logo"></span>
+				Binding
+			</a>
+
+
+			<label class="link-lg">
+				<input type="checkbox" class="hidden">
+				Articles
+			</label>
+
+			<ul>
+				<li><a href="article-1/">Article 1</a>
+				</li>
+				<li><a href="article-2/">Article 2</a>
+				</li>
+				<li><a href="article-3/">Article 3</a>
+				</li>
 			</ul>
 
-			<a class="uppercase font-libre">Binding</a>
-
 		</nav>
-		<h1 class="font-nunito">The Modernist <span class="background-highlight">Grid</span></h1>
 
-		<section class="font-libre uppercase author-name top-30 bottom-20">
+		<h1>Towards a complex <span class="special-highlight">Simplicity</span></h1>
+
+		<section class="uppercase author-name">
+			<p>Best Design is</p>
+			<div class="lines-together">
+				<div class="line-horizontal"></div>
+				<div class="line-vertical"></div>
+			</div>
+			<p class="bold">Simple</p>
+		</section>
+
+	</header>
+
+
+
+	<article>
+
+		<section class="two-column-style">
+
+			<section class="about">
+				<h2 class="h2-landing-sm uppercase">about</h2>
+				<ul>
+					<li>
+						<span class="uppercase">Author:</span>
+						<span>Andrew Blauvert</span>
+					</li>
+					<li>
+						<span class="uppercase">Date:</span>
+						<span>2000 </span>
+					</li>
+					<li>
+						<span class="uppercase">Journal:</span>
+						<a href="https://www.eyemagazine.com/feature/article/towards-a-complex-simplicity" class="link-sm">The Eye Magazine</a>
+					</li>
+
+				</ul>
+
+				<a href="../article-2/index.html" class="button-secondary uppercase">skip to next article</a>
+
+			</section>
+
+			<section class="introduction">
+				<h2 class="h2-landing-sm uppercase">Introduction</h2>
+				<p>
+					What defines contemporary graphic design today? The shelves of your local bookshop provide at least one answer. Most books published on the so-called avant-garde of contemporary design represent the institutionalisations of graphic experimentation, only confirming that the radical signs surrounding design in the late 1980s and early 1990s have become thoroughly predictable.
+
+				</p>
+
+				<blockquote class="block-quotes">
+					In the face of global branding, designers are seeking inspiration from the everyday.
+				</blockquote>
+
+			</section>
+		</section>
+
+
+
+
+		<section class="padding-20 margin-top-md">
+			<h2 class="title-2 uppercase">
+				Complex simplicity.
+			</h2>
+
+			<div class="line-horizontal"></div>
+
+			<section class="paragraph-column">
+				<div class="div-1">
+					<div></div>
+					<div></div>
+
+				</div>
+				<section class="  font-libre paragraph-section">
+					<p>
+						In the realm of the simply complex, fragmentation is preferred as the viewer assembles various bits of text and image to form an aggregate message. Such work tends to treat language as a free-floating talisman, isolated words drifting across the page in search of meaning. By contrast a complex simplicity relies on enumeration and explication, a series of digressions and elaborations linked in the flow of language. What seems trivial and tangential becomes essential - like so many bits and pieces of data in the detritus of the information age.
+
+					</p>
+
+					<p>
+						This abundance of information is employed to dramatic and occasionally humorous effect. Structure becomes paramount in order to handle large quantities of texts and images: a penchant for charts, diagrams and maps prevails. But in the most interesting work what appears to be good old information design reveals, upon closer examination, something more subjective - a kind of over-rationalised explication - that undermines its historical associations of neutrality and objectivity.
+
+					</p>
+
+					<p>
+						The diagrammatic and the eccentric converge in Timothy McSweeney’s, a literary journal in which words reign supreme. This is confirmed by the admonishment on the cover of issue two: If words are to be used as design elements then let designers write them Prone to confabulation, this small, book-like journal is set in only one typeface, Garamond, about which is provided a five-page pseudo-colophon.
+
+					</p>
+
+					<p>
+						McSweeney’s is typically bereft of imagery, especially photography, preferring small line illustrations and the occasional diagram or dingbat. Its well crafted covers evoke Victorian typographic guises with elaborate extended prose and marginalia, while intricate charts structure the contents of each issue in much the way that nineteenth-century physiognomy charts tried to map human nature.
+
+					</p>
+				</section>
+			</section>
+
+			<blockquote class="block-quotes   font-libre  ">
+				For McSweeney’s, modernist "activated" white space seems empty, wasteful, and useless.
+			</blockquote>
+
+			<section class="paragraph-center">
+
+				<section class="  font-libre paragraph-section">
+					<p>
+						McSweeney’s relies on verbal explication and finds a visual corollary in the diagram. The contents of issue two, for example, are represented by the number of words per article and approximate reading time, and by a pie chart that categorises the offerings by percentage, for example:
+					</p>
+
+					<ul>
+						<li>
+							Stories that want you to be happy: 19%. Carefully ordered, but abhorrent of white space, it leaves no place unused. Witness, from the third issue cover, messages such as "This area was blank for the longest time".
+
+						</li>
+						<li>
+							"Nothing need happen here", or an article printed on the spine
+						</li>
+					</ul>
+
+					<p>
+						For McSweeney’s the modernist principle of "activated" white space seems empty, both wasteful and useless, because every place is a seen as a potential space to hold meaning.
+					</p>
+
+					<p>
+						It is also possible for the form to structure itself. For example, various bits of data taken together form a powerful gestalt in Jeremy Coysten’s poster series on aeroplane crashes and traffic accidents. Coolly rendered as scatterplots, Coysten’s Civil Airline Disasters 1950-1998 fixes the location and death toll of 607 aviation tragedies, their resulting dispersal pattern forming an image of the world. Coysten’s poster was prompted by his own near-miss incident aboard a flight to Australia.
+					</p>
+
+					<p>
+						A second poster in the series documents road accidents in the uk over one week. In both instances the rational forms of information design have been employed to register the seemingly irrational loss of life. The calculated nature of the statistics contrasts with random events or accidents. The posters are produced for sale and are not commissioned for public safety campaigns. In this way information becomes both a product and a surrogate form of experience.
+
+					</p>
+				</section>
+			</section>
+
+		</section>
+
+
+
+
+
+		<section class="padding-20 margin-top-md">
+			<h2 class=" uppercase title-2 ">
+				Sublimating expressions.
+			</h2>
+			<div class="line-horizontal"></div>
+
+
+			<section class="paragraph-column">
+				<div></div>
+				<section class=" font-libre paragraph-section">
+					<p>
+						While the overt intervention of the designer figured prominently as a signifier of self-expression, one can detect the suspension of many of the designer’s more subjective decision-making tasks. Like forms of conceptual art, the preferred mode is more detached, relying on systematic approaches to produce solutions. Sol LeWitt once proclaimed that the idea is the machine that makes the art. The systematic nature of a predetermined process generates its form, and in this way it is the process itself that becomes the concept.
+
+					</p>
+
+					<p>
+						An example of such participatory, rather than prescriptive, design is a poster by Paul Elliman for a conference on the work of the French writer Lautréamont (see Eye no. 25 vol. 7, page 31). White boxes have been inserted between the words "image", "Maldoror" and “text”, for conference participants to complete, alter or negate. This simple gesture allows the project to generate a multitude of responses, which as an action echoes the nature of the event’s interpretive agenda.
+
+					</p>
+
+					<p>
+						In a similar but more extreme vein, Daniel Eatock’s utilitarian poster project, essentially a generic form silk-screened on newsprint paper, methodically guides the user through the steps of creating their own advertisement, and includes blanks to insert relevant information, such as titles of events, images, persons to contact, etc. In this instance the work is wholly dependent on viewer response, the absence of which denies the piece its essential content.
+
+					</p>
+
+				</section>
+			</section>
+
+
+
+			<blockquote class="block-quotes">
+
+				Conventional assumptions of design authorship were limited by the project's scope and language barrier.
+
+			</blockquote>
+			<section class="paragraph-column">
+				<div></div>
+				<section class=" font-libre paragraph-section">
+					<p>
+						Anne Burdick’s design for Wörterbuch der Redensarten, a dictionary of idioms, demonstrates an intricate form of complexity that weaves together various texts. Gathered from the work of Karl Krauss’s Die Fackel, a literary journal published between 1899 and 1936, Burdick worked with a group of researchers in Vienna to generate a series of design directions for the subsequent layout of 1,056 pages. The aim of the project is interpretative, not exhaustive, therefore the body of the text comprises only 144 expressions used by Krauss in Die Fackel. The purpose of this dictionary is to register the nuances of Krauss’s concepts and expressions.
+
+					</p>
+
+					<p>
+						Representing a decidedly postmodern “tissue of quotations”, Burdick has structured the pages so that the central column of text includes excerpts from Krauss’s writings, while the left column contains citations and cross-references, and the right column contains texts that perform “interpretative actions” on the main passage. Because Krauss often used typography and imagery semantically in his writings, the central column frequently contains images and passages of text lifted directly from the original.
+
+
+					</p>
+
+					<p>
+						Burdick acknowledges that conventional assumptions of design authorship were hampered by both the scope of the project and the barrier of a foreign language. Relying instead on a series of instructions, Burdick’s solution nevertheless bears the traces of the designer’s close attention to the details that would allow the project to realise its most appropriate polyphonic form.
+
+
+					</p>
+
+				</section>
+			</section>
+			<blockquote class="block-quotes">
+
+				Simple complexity demands typographic experimentation.
+
+
+			</blockquote>
+
+			<section class="paragraph-center">
+				<div></div>
+				<section class=" font-libre paragraph-section">
+					<p>
+						Simple complexity demands typographic experimentation, highly articulated structures and eccentric typefaces. By contrast, a complex simplicity revels in the spartan vocabulary of what might be called “vanilla typography”, where typography has been reduced to a near-zero degree of expression – neither pretty nor eccentric, but quite plain.
+
+
+					</p>
+
+					<p>
+						This is an inverted world where the ordinary stands out from the crowd as a distinctive gesture. By comparison, yesteryear’s shaped paragraph blocks and micromanaged type treatments look like fussy affectations, so many histrionics in the passion play of design. This change in typographies signals not only a shift in fashion, but also helps expose the expressionistic fallacy behind much 1990s design.
+
+
+
+					</p>
+
+					<p>
+						Expressionism denies its existence as a language, and thus a style, in order to preserve a sense of immediacy, a supposedly unmediated or direct connection to individual desire and the unconscious. Indeed, in most forms of contemporary design, expressionism has become synonymous with individuality.
+
+
+
+					</p>
+
+					<p>
+						While modern typography in the 1960s and 1970s could be easily linked with the increasing rationality of the then-emerging industrial technocracy, today’s similar but simpler typography is aligned with the cultural sectors of fashion and art. This simplified approach to typography, while relatively common to many culture magazines, is most often employed in conjunction with the nouveau realist photography of the quotidian.
+
+
+					</p>
+
+				</section>
+			</section>
+
+		</section>
+
+
+
+		<em class="  background-highlight uppercase animated-banner padding-20 ">It is an image of rectangularity.</em>
+
+
+
+
+
+		<section class="padding-20 margin-top-md">
+			<h2 class="uppercase title-2  ">
+				Picturing the everyday.
+			</h2>
+			<div class="line-horizontal"></div>
+
+			<section class="paragraph-column">
+
+				<div></div>
+
+				<section class=" font-libre paragraph-section ">
+
+					<p>
+						One of the more influential publications in this genre is Paris-based Purple, which surveys the worlds of art, fashion, fiction, prose and interiors. Segregating the verbal (prose, fiction) from the visual (art, fashion, interiors), Purple’s preferred image is the snapshot, the most immediate form of photographic address. Uncomplicated, unstudied, and frequently unstaged, the snapshot negates the conditions of professional, commercial photography, with its requisite need for elaborate lighting set-ups, make-up, styling and retouching.
+
+					</p>
+					<p>
+						While images have undergone extensive digital manipulation in the past decade, the recent resurgence of the snapshot makes one wonder whether this form of representation is a critical alternative or simply a fashionable one. The extensive presence of fashion advertising that mimics this look in the pages of Purple suggests the latter.
+
+					</p>
+
+				</section>
+
+			</section>
+			<blockquote class="block-quotes">
+				The moment preserved by the snapshot is valued because it signifies “realness”.
+			</blockquote>
+
+			<section class="paragraph-column">
+
+				<div></div>
+
+				<section class=" font-libre paragraph-section ">
+
+					<p>
+						In this image world, life is collected in pictures documenting the everyday in the face of a highly mediated, spectacularised existence. The moment preserved by the snapshot is valued because it signifies “realness”. This theme appears in cultiver notre jardin, by Jan van Toorn.
+
+
+					</p>
+					<p>
+						Using a structure of perforated and folded pages, Van Toorn alternates between colour and black and white images - pictures taken mainly by him - of people, friends and places around the world. Interspersed through the book are quotations about social reality, mediated experience and notions of public and private space, including a quote by social critic Mike Davis, who argues for a re-examination of nineteenth-century realism and its relationship to everyday life. Van Toorn extols us to cultivate our own garden, by carving out a space in the public sphere in what have become expanding corporate and institutional fields.
+
+
+					</p>
+
+				</section>
+
+			</section>
+
+			<blockquote class="block-quotes">
+				We long for the less-mediated experiences found in the routines of life.
+			</blockquote>
+
+			<section class="paragraph-column">
+
+				<div></div>
+
+				<section class=" font-libre paragraph-section ">
+
+					<p>
+						Rather than striving to record moments of realness as it happens, other designers prefer a much more mediated approach to representation. Eschewing visual ambiguity, including the clichéd stylistic affectations of blurriness, the preferred mode of pictorial represent-ation is documentary realness - not an attempt at capturing the authentic, but a much more studied trope that signifies the real but does not try to stand in for it.
+
+
+
+					</p>
+					<p>
+						This strategy is evinced in Jop van Bennekom’s self-initiated project, re-, a magazine about everyday life. In an issue devoted to sex, the cover models (a man and a woman) appear fresh from a sexual encounter – replete with small beads of perspiration on their faces. Inside, the clichés of sex are distributed accordingly:Sexual innuendo and phallicism;Photos of stained mattresses and bits of blacked-out (“censored”) texts.The texts remain first-person accounts, either testimonials, diaristic thoughts, or confessions.
+
+					</p>
+
+				</section>
+
+			</section>
+
+		</section>
+
+
+
+
+
+		<section class="padding-20 margin-top-md">
+			<h2 class="uppercase title-2 aling-center">
+				The ordinary made extraordinary.
+			</h2>
+			<div class="line-horizontal"></div>
+
+			<section class="paragraph-center">
+
+
+
+				<section class="  font-libre paragraph-section">
+					<p>
+						With the reconsideration of the ordinary and everyday within graphic design, one may ask whether we are witnessing the end of what was once referred to as “the society of the spectacle”. It is more likely that with today’s campaigns for global branding – the process that transforms the ordinary into the memorable – we long for the less-mediated experiences found in the routines of daily life. Perhaps we can’t recognise the spectacle because it exists all around us.
+
+					</p>
+
+					<p>
+						After attending America: Cult and Culture, last year’s AIGA [American Institute of Graphic Arts] conference in Las Vegas (Reviews, Eye no. 34 vol. 9), it seemed all too easy to leave the spectacle behind as my plane departed. Watching television at home, a group of rather ordinary young men and women dressed casually but alike were singing along to an old Madonna tune.
+
+					</p>
+
+					<p>
+						The minimal white stage set and the uninflected karaoke ushered in the autumn season of clothing for The Gap and I found myself transfixed: ordinary clothes worn by average people elevated to a new aesthetic.
+
+					</p>
+
+					<p>
+						At that moment it was difficult, but not impossible, to remember that the truly ordinary lies in opposition to the brand. I was reminded of the architect Deborah Berke’s warning, in writing about the transformation of the landscape from banal to branded: To confuse ubiquitous logos with generic identity [is] to mistake successful marketing for ‘popular’ culture. At the eclipse of the society of the spectacle, the ordinary is made extraordinary and the trivial and mundane become memorable.
+					</p>
+				</section>
+
+			</section>
+
+		</section>
+
+
+
+	</article>
+
+	<footer class="padding-20">
+
+		<section>
 			<time>2024</time>
 			<div class="lines-together">
 				<div class="line-horizontal"></div>
 				<div class="line-vertical"></div>
 			</div>
-			<a>Richard Hollis</a>
+			<span class="uppercase">Inji Mammadli</span>
 		</section>
 
-	</header>
-
-	<article class="padding">
-
-	<section class="text-sm font-libre top-40 bottom-30">
-		<p>
-			Printing until the middle of the twentieth century was mainly letterpress, from inked type and photoengravings. The piece of metal which carried the inked letter was rectangular. These rectangles increased in height with the size of the letter in ﬁxed increments, so that moveable, reusable type has been described as a <span class="background-highlight">modular, standardised system.</span>
-		</p>
-
-	</section>
-
-	<div class="line-horizontal"></div>
-
-	<section>
-
-		<section>
-			<h2 class="font-nunito uppercase title-2 top-40">
-				Title 1
-			</h2>
-
-			<section class="text-sm font-libre paragraph-section bottom-30">
-				<p>
-					The printing trade had the habit of ﬁlling out the lines of type with space between the words so that the reader came to expect a textured, rectangular panel of text on the page. The lines were separated horizontally by ﬁxed amounts, packed out with thin strips of lead ~ hence leading. The distance between one line and the next appeared as a constant line of white paper.
-				</p>
-
-				<p>
-					This rectangularity was essential to the mechanical process. (By tightening wedges, the rectangular type and spacing material could be locked in position in a <span class="background-highlight">metal frame.</span> This allowed it to be moved from the bench where it was assembled to the bed of a printing press.)
-				</p>
-
-				<p>
-					The essential elements of the grid — rectangularity, standardisation and modules, repetition and separation — are all present in pre-Modernist typographic design.
-				</p>
-
-			</section>
-		</section>
-		<section>
-			<div class="rectangle">
-				<div class="rectangle-inside"></div>
-			</div>
-			<p class="text-sm font-libre top-20 font-caption">
-				The distance between the printed area and the edge of the paper — the margins — were outside this modular system.
-			</p>
-		</section>
-
-		<section class=" top-40">
-			<div class="double-line"></div>
-			<section class="section-middle">
-				<em class="font-nunito background-highlight uppercase text-lg text-animated ">Grid or anything</em>
-				<p class="text-sm font-libre">In twentieth century typographic practice, the grid developed as a means of reducing the number of choices that the designer could make about dimensions of columns and illustrations. Instructions to the printer could be simpler by reference to a ﬁxed and limited set of measurements.</p>
-			</section>
-			<div class="double-line"></div>
-		</section>
-	</section>
-
-	</section>
-</article>
+		<a class="link-lg">Back to top</a>
+	</footer>
 
 
-</body>
+
 
 </html>
