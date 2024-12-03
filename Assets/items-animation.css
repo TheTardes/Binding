@@ -151,19 +151,24 @@
 	display: flex;
 	justify-content: space-between;
 	margin-top: 12px;
+	gap: 12px;
 
 	li {
 		text-decoration: underline;
 		padding-inline: 1rem;
 
 		padding-inline: 12px;
-		padding-block: 11px;
+		padding-block: 6px;
 		font-family: var(--dec-font);
 
-		border-radius: 3px;
 		text-align: center;
 
 		text-transform: uppercase;
+
+		&:hover {
+			background-color: var(--black);
+			color: var(--bg);
+		}
 
 		&:has(input:checked) {
 			text-decoration: none;

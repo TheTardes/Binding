@@ -1,7 +1,33 @@
+/* margins */
+
 .top-12 {
 	margin-top: 12px;
 	display: block;
 }
+
+
+
+/*  decorative-fonts */
+
+.chaos-font {
+	font-family: "Rubik Maze", system-ui;
+	font-weight: 600;
+	font-style: italic;
+	/* font-size: 100px; */
+}
+
+.structure-font {
+	font-family: "Rubik Doodle Shadow", system-ui;
+	/* font-size: 100px; */
+}
+
+.simplicity-font {
+	font-family: "Rubik", sans-serif;
+	font-weight: 200;
+}
+
+
+
 
 h1 {
 	padding-inline: 20px;
@@ -9,8 +35,8 @@ h1 {
 	margin-bottom: 96px;
 	margin-top: 24px;
 
-	font-size: 35px;
-	line-height: 47px;
+	font-size: 42px;
+	line-height: 56px;
 
 	& .weird-line {
 		margin-top: 12px;
@@ -38,70 +64,44 @@ h1 {
 	}
 }
 
-.h2-landing {
 
-	border-bottom: 1px solid var(--black);
-	padding-bottom: 12px;
 
-	font-size: 20px;
-	line-height: 27px;
-}
+/* specific tags */
+
 
 .container-h2 {
 	margin-bottom: 56px;
 	padding-inline: 20px;
 
-	&>p{
+	&>p {
 		margin-top: 20px;
 	}
 }
 
+.h2-landing{
+	border-bottom: 1px solid var(--black);
+	padding-bottom: 12px;
+	margin-bottom: 20px;
+
+	font-size: 24px;
+	line-height: 32px;
+}
+
+
+
 @media (min-width: 1512px) {
 
-	.top-12 {
-		margin-top: 0px;
-		display: block;
-	}
-	.and-height{
-		line-height: 120px;
-	}
-	.align-2{
-		margin-left: 10%;
-		margin-top: 56px;
-	}
-
-	.align-3{
-		display: flex;
-		flex-direction: row;
-		gap: 50px;
-		margin-left: 30%;
-		margin-top: 56px;
-	}
-
-	.align-5{
-		display: flex;
-		justify-content: end;
-		margin-top: 56px;
-	}
-
-	article{
-		display: flex;
-		justify-content: space-between;
-		gap: 52px;
-	}
-
-
-	h1{
-
+	h1 {
 		margin-top: 100px;
 		margin-bottom: 120px;
 		text-align: left;
 		font-size: 80px;
 		line-height: 100px;
+		padding-inline: 0px;
 
 		& .weird-line {
 			margin-top: 32px;
-		
+
 			width: 500px;
 			display: block;
 			transform: rotate(-2.17deg);
@@ -110,13 +110,56 @@ h1 {
 		& .slider {
 			margin-top: 10px;
 			width: 500px;
-
 		}
-	
-
-	
-	
 	}
 
-	
+
+	/* margins, paddings */
+
+	.top-12 {
+		margin-top: 0px;
 	}
+
+	.container-h2 {
+		padding-inline: 0px;
+	}
+
+
+
+	/* alignment of H1 */
+
+	.and-height {
+		line-height: 120px;
+	}
+
+	.align-2 {
+		margin-left: auto;
+		margin-top: 56px;
+	}
+
+	.align-3 {
+		display: flex;
+		flex-direction: row;
+		gap: 50px;
+		margin-left: 20%;
+		margin-top: 56px;
+	}
+
+	.align-5 {
+		display: flex;
+		justify-content: end;
+		margin-top: 56px;
+	}
+
+
+
+	/* locating containers */
+
+	article {
+		display: flex;
+		justify-content: space-between;
+		gap: 52px;
+	}
+
+
+}

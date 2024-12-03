@@ -1,153 +1,125 @@
-
-
-
 h1 {
-	margin-inline: 20px;
+	padding-inline: 20px;
 	width: fit-content;
 	text-transform: uppercase;
-	line-height: 48px;
-}
 
-article{
-	padding-inline: 20px;
-}
-
-
-/* commmon */
-
-.background-highlight {
-
-	padding: 14px;
-	border: solid 1px var(--black);
-	
-	
-}
-.double-line{
-	border-top: 2px solid black;
-	border-bottom: 2px solid black;
-	height: 0.8rem;
-}
-
-
-.text-lg {
-	font-size: 2rem;
-}
-
-.title-2 {
-	font-size: 24px;
-	line-height: 34px;
-}
-
-.top-30 {
-	margin-top: 32px;
-}
-
-.top-20 {
-	margin-top:24px;
-}
-
-.bottom-30 {
-	margin-bottom: 32px;
-}
-
-.bottom-20 {
-	margin-bottom: 24px;
-}
-
-.paragraph-section {
-	
-	p{
-		margin-top: 1.25rem;
-	}
-}
-
-.top-40 {
-	margin-top: 42px;
-}
-
-.bottom-40 {
-	margin-bottom: 40px;
-}
-
-.font-caption{
+	vertical-align: middle;
 	font-weight: 600;
-	font-style: italic;
-}
 
-.text-animated{
- text-wrap: nowrap;
-}
-
-.text-xxs{
-	font-size: 0.75rem;
-}
-/* common */
-
-.section-middle{
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-	margin-block: 2rem;
-}
-
-
-.rectangle{
-	border: 2px solid;
-	color: black;
-	width: 100%;
-	height: 12rem;
-	padding: 2.25rem;
-
-	&>.rectangle-inside{
-		border: 2px solid;
-		color: black;
-		width: 100%;
-		height: 100%;
-	}
-}
-
-.dark-rectangles{
-	color: black;
-	background-color: black;
-	padding: 0.3rem;
-	width: fit-content;
-	height: fit-content;
+	margin-bottom: 44px;
+	margin-top: 34px;
 }
 
 
 
-.navigation {
-	display: flex;
+/* decorative elements */
 
-	&>ul{
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: row;
-		justify-content: flex-start;
-		gap: 0.125rem;
-	}
+
+.special-highlight {
+
+	width: auto;
+	display: block;
+	padding-inline: 2px;
+	padding-bottom: 2px;
+	padding-top: 6px;
+	border: solid 3px var(--black);
+
+
+	background-size: 40px 40px;
+	background-image:
+		linear-gradient(to right, grey 1px, transparent 1px),
+		linear-gradient(to bottom, grey 1px, transparent 1px);
+
 }
+
+
+
+
+
 
 
 @media (min-width: 1512px) {
 
+	/* div decorations */
+
+	.div-1 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		margin-top: 24px;
+
+
+		gap: 30px;
+
+		&>:nth-child(1) {
+			width: 200px;
+			height: 70%;
+
+
+			border: none;
+			outline: none;
+			color: #000;
+			background: linear-gradient(45deg,
+					#999 5%,
+					#fff 10%,
+					#ccc 30%,
+					#ddd 50%,
+					#ccc 70%,
+					#fff 80%,
+					#999 95%);
+
+			border-radius: 2px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+			transition: all 0.2s ease-in-out;
+
+
+		}
+
+		&>:nth-child(2) {
+			width: 200px;
+			height: 70%;
+
+			border: 2px solid skyblue;
+			background-image: repeating-linear-gradient(transparent 0, transparent 1em, skyblue 0, skyblue 1.1em);
+
+
+		}
+
+	}
+
 	
 
-	h1{
-		font-size: 60px;
-		line-height: 80px;
-		margin: auto;
 	
-		max-width: 876px;
-	
-		padding: 42px;
+
+	h1 {
+		font-size: 90px;
+		line-height: 120px;
+
+		padding: 0px;
+
+		margin-top: 130px;
+		margin-bottom: 62px;
+
 	}
-	
-	.title-2 {
-		font-size: 40px;
-		line-height: 54px;
-		font-weight: 600;
+
+
+	.special-highlight {
+		padding-inline: 14px;
+		padding-bottom: 6px;
+		padding-top: 22px;
+
 	}
+
+
+	h1 {
+		display: flex;
+		flex-direction: row;
+		gap: 1rem;
+		align-items: center;
+	}
+
 
 
 }
