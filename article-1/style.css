@@ -89,7 +89,7 @@ h1 {
 
 	}
 
-	
+
 
 	
 
@@ -109,6 +109,8 @@ h1 {
 		padding-inline: 14px;
 		padding-bottom: 6px;
 		padding-top: 22px;
+
+		width: fit-content;
 
 	}
 

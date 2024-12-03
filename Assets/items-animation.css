@@ -2,12 +2,13 @@
 .group-1,
 .group-2,
 .item {
-	transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out, margin 0s;
 }
 
 /* this only applies when chaos is selected */
 :has(#chaos:checked) {
 	.item-container {
+		margin-bottom: 1rem;
 		gap: 1rem;
 
 		.group-1,
@@ -96,6 +97,7 @@
 /* this only applies when simplify is selected */
 :has(#simplify:checked) {
 	.item-container {
+		margin-bottom: 1rem;
 		gap: 1rem;
 
 		.group-1,
@@ -117,11 +119,11 @@
 .item-container {
 	display: grid;
 
-	.group-1{
+	.group-1 {
 		margin-top: 24px;
 	}
 
-	.group-2{
+	.group-2 {
 		margin-bottom: 24px;
 	}
 
@@ -149,13 +151,17 @@
 
 .items-container ul {
 	display: flex;
-	justify-content: space-between;
-	margin-top: 12px;
-	gap: 12px;
+	justify-content: center;
+	margin-top: 16px;
+	gap: 6px;
+
 
 	li {
-		text-decoration: underline;
-		padding-inline: 1rem;
+		cursor: pointer;
+
+		border: solid 1px var(--black);
+		border-radius: 2px;
+
 
 		padding-inline: 12px;
 		padding-block: 6px;
@@ -179,10 +185,32 @@
 }
 
 .items-container {
-	
+
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
 
-	padding: 1rem;
+
+}
+
+
+@media (min-width: 1512px) {
+
+	.items-container {
+
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	
+
+		&>ul {
+			flex-direction: column;
+			justify-content: start;
+
+			gap: 12px;
+
+		}
+
+	}
+
 }

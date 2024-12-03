@@ -78,6 +78,8 @@ h1 {
 	}
 }
 
+
+
 .h2-landing{
 	border-bottom: 1px solid var(--black);
 	padding-bottom: 12px;
@@ -122,6 +124,16 @@ h1 {
 
 	.container-h2 {
 		padding-inline: 0px;
+	}
+
+	.colophone{
+		width: 40%;
+		font-size: 20px;
+		line-height: 34px;
+	}
+
+	.create{
+		width: 60%;
 	}
 
 

@@ -1,6 +1,6 @@
 :root {
 	--black: #1A1A1A;
-	--bg: #EEF5FF;
+	--bg: #f8fafc;
 	--dec-font: "Amiko", serif;
 	--highlight: #222222;
 	--white: #ffffff;
@@ -13,6 +13,7 @@
 	color: var(--black);
 
 	font-family: "Libre Franklin", sans-serif;
+
 }
 
 
@@ -31,38 +32,15 @@ h1 {
 nav {
 
 	padding-inline: 20px;
-	--height: 80px;
+	
 	position: relative;
 	z-index: 2;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem;
-	height: var(--height);
+
 	font-family: var(--dec-font);
-
-	& ul {
-		padding-inline: 20px;
-		background-color: var(--bg);
-		position: absolute;
-		left: 0;
-		width: 100vw;
-		transition: top 0.3s ease-in-out;
-		top: calc(-100vh + var(--height));
-		height: calc(100vh - var(--height));
-
-		text-align: center;
-
-
-		text-decoration: underline;
-
-		& li {
-			padding-block: 20px;
-			border-bottom: 1px solid var(--black);
-
-		}
-
-	}
 
 	&>:nth-child(1) {
 
@@ -253,6 +231,9 @@ quote {
 	line-height: 46px;
 
 	font-weight: 600;
+
+	position: sticky;
+	top: 0;
 }
 
 .link-sm{
@@ -343,6 +324,32 @@ quote {
 }
 
 
+@media (max-width: 1512px) {
+	nav {
+	  --height: 80px;
+	  height: var(--height);
+  
+	  & ul {
+		padding-inline: 20px;
+		background-color: var(--bg);
+		position: absolute;
+		left: 0;
+		width: 100vw;
+		transition: top 0.3s ease-in-out;
+		top: calc(-100vh + var(--height));
+		height: calc(100vh - var(--height));
+  
+		text-align: center;
+		text-decoration: underline;
+  
+		& li {
+		  padding-block: 20px;
+		  border-bottom: 1px solid var(--black);
+		}
+	  }
+	}
+  }
+
 
 
 @media (min-width: 1512px) {
@@ -393,6 +400,30 @@ quote {
 		
 	}
 
+
+
+	nav .link-lg {
+		display: none;
+	  }
+	
+	  nav ul {
+		display: flex;
+		align-items: center;
+		gap: 24px;
+
+		& a{
+			cursor: pointer;
+			text-decoration: underline;
+
+			&:hover{
+				background-color: var(--black);
+				color: var(--white);
+			}
+		}
+	  }
+
+
+
 /* padding and margins */
 
 	.padding-20{
@@ -420,15 +451,15 @@ quote {
 		max-width: 840px;
 	}
 	
-	:root{
+	body{
 		max-width: 1296px;
-		margin: auto;
+		margin-inline: auto;
 	}
 
-	article,nav,footer,h1{
+	/* article,nav,footer,h1{
 		padding-inline: 0px;
 		margin-inline: 0px;
-	}
+	} */
 
 	.about{
 		width: 30%;
@@ -466,8 +497,8 @@ quote {
 	}
 
 	:root {
-		font-size: 24px;
-		line-height: 42px;
+		font-size: 22px;
+		line-height: 40px;
 	}
 
 	.h2-landing-sm {
@@ -479,6 +510,7 @@ quote {
 		line-height: 43px;
 
 		margin-bottom: 56px;
+
 	}
 
 	.button-secondary{
