@@ -10,8 +10,34 @@
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: black;
 
-	font-size: 56px;
 
+}
+
+.block-quotes {
+
+	width: fit-content;
+	max-width: 1100px;
+	text-align: left;
+
+
+	padding-left: 20px;
+	padding-block: 20px;
+
+	font-size: 20px;
+	line-height: 30px;
+
+
+	font-style: italic;
+
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+	border-left: 1px solid var(--black);
+
+	&>span {
+		font-style: italic;
+		font-weight: 600;
+	}
 
 }
 
@@ -20,7 +46,7 @@
 
 
 	.special-highlight{
-		font-size: 120px;
 		margin-bottom: 32px;
+		-webkit-text-stroke-width: 2px;
 	}
 }
