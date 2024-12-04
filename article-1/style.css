@@ -3,7 +3,9 @@
 	--title2-bg: #CECECE;
 	--highlight-sm: #000BA0;
 	--main-color-1:#000BA0;
-	background-color: #EEF5FF;
+	--bg-color-1:#EEF5FF;
+
+	background-color: var(--bg-color-1);
 }
 
 
@@ -17,18 +19,11 @@ h1{
 	border-color: var(--main-color-1);
 }
 
-.animated-banner{
-	background-color: var(--main-color-1);
-}
-
 .title-2{
 	border-block: 2px solid var(--main-color-1);
 	color: var(--main-color-1);
 }
 
-.background-highlight{
-	color: var(--main-color-1);
-}
 
 /* decorative elements */
 

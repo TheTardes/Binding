@@ -1,18 +1,68 @@
 :root{
-	--main-color-2:#30A000;
+	--main-color-1:#007A37;
+	--bg-color-1: #f3fbfa;
+	background-color: var(--bg-color-1);
 }
+
+h1{
+	color: var(--main-color-1);
+}
+
+.h2-landing-sm{
+	color: var(--main-color-1);
+	border-color: var(--main-color-1);
+}
+
+
+.title-2{
+	border-bottom: 2px solid var(--main-color-1);
+	color: var(--main-color-1);
+}
+
+.list{
+	margin-block: 1rem;
+	list-style: square;
+	list-style-position: inside;
+	
+
+	&>li{
+		margin-bottom: 0.5rem;
+	}
+
+}
+
 
 
 /* decorative elements */
 
 
+.special-highlight-h1 {
+
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: var(--main-color-1);
+
+	font-weight: 900;
+}
+
 .special-highlight {
 
 	-webkit-text-fill-color: white;
 	-webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: black;
+	-webkit-text-stroke-color: var(--main-color-1);
 
+	font-weight: 900;
+	font-size: 40px;
 
+}
+
+.text-highlight {
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke-width: 1.5px;
+	-webkit-text-stroke-color: var(--main-color-1);
+	font-size: 1.3rem;
+	font-weight: 900;
+	text-transform: uppercase;
 }
 
 .block-quotes {
@@ -34,22 +84,85 @@
 	margin-top: 40px;
 	margin-bottom: 40px;
 
-	border-left: 3px solid var(--main-color-2);
+	border-left: 3px solid var(--main-color-1);
+	color: var(--main-color-1);
 	
 
 	&>span {
-		font-style: italic;
+		text-transform: uppercase;
 		font-weight: 600;
 	}
 
 }
 
+.floating-quotes{
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+
+	border: 1px solid var(--main-color-1);
+	border-radius: 4px;
+
+	background-color: var(--white);
+
+	margin-top: 40px;
+	margin-bottom: 40px;
+	margin-inline: 20px;
+	padding-inline: 20px;
+	padding-block: 30px;
+
+
+	&>p {
+		color: var(--main-color-1);
+		font-weight: 600;
+		font-size: 1.2rem;
+	}
+
+	&>:nth-child(1) {
+		transform: rotate(-6deg);
+	}
+
+	&>:nth-child(2) {
+		transform: rotate(4deg);
+	}
+
+	&>:nth-child(3) {
+		transform: rotate(-6deg);
+	}
+}
+
 @media (min-width: 1512px) {
 
+	.block-quotes {
+	
+		font-size: 26px;
+		line-height: 40px;
 
+		padding-left: 44px;
+		margin-block: 75px;
+	}
+
+	.floating-quotes {
+
+		margin-bottom: 140px;
+		border: solid 3px var(--main-color-1);
+
+
+		gap: 2rem;
+	
+		padding-block: 60px;
+
+
+		&>p {
+			font-size: 64px;
+		line-height: 80px;
+			padding-inline: 24px;
+		}
+	}
 
 	.special-highlight{
 		margin-bottom: 32px;
 		-webkit-text-stroke-width: 2px;
+		font-size: larger;
 	}
 }

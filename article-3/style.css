@@ -1,5 +1,25 @@
 
 
+:root{
+	--main-color-1:#870054;
+	--bg-color-1: #f8f0fa;
+	background-color: var(--bg-color-1);
+}
+
+h1{
+	color: var(--main-color-1);
+}
+
+.h2-landing-sm{
+	color: var(--main-color-1);
+	border-color: var(--main-color-1);
+}
+
+
+.title-2{
+	border-bottom: 2px solid var(--main-color-1);
+	color: var(--main-color-1);
+}
 
 /* decorative elements */
 
