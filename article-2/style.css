@@ -1,4 +1,6 @@
-
+:root{
+	--main-color-2:#30A000;
+}
 
 
 /* decorative elements */
@@ -29,10 +31,11 @@
 
 	font-style: italic;
 
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 40px;
+	margin-bottom: 40px;
 
-	border-left: 1px solid var(--black);
+	border-left: 3px solid var(--main-color-2);
+	
 
 	&>span {
 		font-style: italic;

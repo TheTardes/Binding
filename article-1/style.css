@@ -2,14 +2,33 @@
 	--grid-bg: #D5D5D5;
 	--title2-bg: #CECECE;
 	--highlight-sm: #000BA0;
-
+	--main-color-1:#000BA0;
+	background-color: #EEF5FF;
 }
 
 
 
+h1{
+	color: var(--main-color-1);
+}
 
+.h2-landing-sm{
+	color: var(--main-color-1);
+	border-color: var(--main-color-1);
+}
 
+.animated-banner{
+	background-color: var(--main-color-1);
+}
 
+.title-2{
+	border-block: 2px solid var(--main-color-1);
+	color: var(--main-color-1);
+}
+
+.background-highlight{
+	color: var(--main-color-1);
+}
 
 /* decorative elements */
 
@@ -52,8 +71,8 @@
 		width: 50%;
 		height: 70px;
 
-		border: 2px solid skyblue;
-		background-image: repeating-linear-gradient(transparent 0, transparent 1em, skyblue 0, skyblue 1.1em);
+		border: 2px solid var(--main-color-1);
+		background-image: repeating-linear-gradient(transparent 0, transparent 1em, var(--main-color-1) 0, var(--main-color-1) 1.1em);
 
 	}
 
@@ -76,7 +95,7 @@
 
 	&>:nth-child(2) {
 
-		border: 1px solid black;
+		border: 1px solid var(--main-color-1);
 
 		width: 50%;
 
@@ -84,14 +103,14 @@
 
 		background-color: var(--white);
 
-		background-image: linear-gradient(var(--black), transparent 2px), linear-gradient(90deg, var(--black) 2px, transparent 2px), linear-gradient(var(--black) 1px, transparent 1px), linear-gradient(90deg, var(--black) 1px, var(--white) 1px);
+		background-image: linear-gradient(var(--main-color-1), transparent 2px), linear-gradient(90deg, var(--main-color-1) 2px, transparent 2px), linear-gradient(var(--main-color-1) 1px, transparent 1px), linear-gradient(90deg, var(--main-color-1) 1px, var(--white) 1px);
 		background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
 		background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
 	}
 
 	&>:nth-child(1) {
 
-		border: 1px solid rgb(133, 133, 133);
+		
 
 		width: 50%;
 		height: 70px;
@@ -120,14 +139,14 @@
 .grid-item {
 
 	background-color: var(--white);
-	border: solid 1px var(--black);
+	border: solid 1px var(--main-color-1);
 	border-radius: 2px;
 	height: 40px;
 
 }
 
 .grid-item.highlighted {
-	background-color: var(--black);
+	background-color: var(--main-color-1);
 }
 
 /* quotes */
@@ -137,11 +156,8 @@
 	display: flex;
 	justify-content: space-around;
 
-
-	border: 1px solid var(--black);
+	border: 1px solid var(--main-color-1);
 	border-radius: 4px;
-
-
 
 	margin-top: 54px;
 	margin-bottom: 70px;
@@ -157,8 +173,9 @@
 	&>p {
 		padding: 6px;
 		background-color: var(--white);
-		border: solid 1px var(--black);
+		border: solid 1px var(--main-color-1);
 		border-radius: 4px;
+		color: var(--main-color-1);
 
 		font-weight: 600;
 	}
@@ -196,7 +213,8 @@
 
 	margin-block: 54px;
 
-	border: 1px solid var(--black);
+	border: 2px solid var(--main-color-1);
+	color: var(--main-color-1);
 	border-radius: 4px;
 
 	&>span {
@@ -210,7 +228,8 @@
 
 .text-highlight {
 	text-wrap: nowrap;
-	border: 1px solid var(--black);
+	color: var(--main-color-1);
+	border: 1px solid var(--main-color-1);
 	font-weight: 600;
 	padding: 0.02rem 0.20rem;
 	background-size: 10px 10px;
@@ -226,8 +245,9 @@
 	padding-inline: 2px;
 	padding-bottom: 2px;
 	padding-top: 6px;
-	border: solid 1px var(--black);
+	border: solid 1px var(--main-color-1);
 	width: fit-content;
+	color: var(--main-color-1);
 
 
 	background-size: 20px 20px;
@@ -244,6 +264,9 @@
 		linear-gradient(to bottom, var(--title2-bg) 1px, transparent 1px);
 }
 
+.background-color-white{
+	background-color: var(--white);
+}
 
 
 
@@ -251,6 +274,10 @@
 
 
 @media (min-width: 1512px) {
+
+	.title-2{
+		border: 2px solid var(--main-color-1);
+	}
 
 	/* div decorations */
 
@@ -339,7 +366,7 @@
 	}
 
 	.text-highlight {
-		border: 2px solid var(--black);
+		border: 2px solid var(--main-color-1);
 	}
 
 	.block-quotes {
