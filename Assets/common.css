@@ -234,8 +234,8 @@ footer {
 	padding-bottom: 12px;
 	margin-bottom: 20px;
 
-	font-size: 24px;
-	line-height: 32px;
+	font-size: 20px;
+	line-height: 30px;
 }
 
 .author-name {
@@ -269,8 +269,8 @@ quote {
 
 	margin-bottom: 40px;
 	
-	font-size: 28px;
-	line-height: 40px;
+	font-size: 32px;
+	line-height: 44px;
 
 	background: var(--bg);
 
@@ -578,10 +578,6 @@ quote {
 		line-height: 80px;
 		font-weight: 600;
 		padding-block: 24px;
-
-		
-
-		
 
 	}
 
