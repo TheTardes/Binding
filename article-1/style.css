@@ -1,36 +1,126 @@
-h1 {
-	padding-inline: 20px;
-	width: fit-content;
-	text-transform: uppercase;
+:root {
+	--grid-bg: #D5D5D5;
+	--title2-bg: #CECECE;
+	--highlight-sm: #000BA0;
 
-	vertical-align: middle;
-	font-weight: 600;
-
-	margin-bottom: 44px;
-	margin-top: 34px;
 }
+
+
+
+
 
 
 
 /* decorative elements */
 
+.floating-quotes {
+
+	display: flex;
+	justify-content: space-around;
+
+
+	border: 1px solid var(--black);
+	border-radius: 4px;
+
+
+
+	margin-top: 54px;
+	margin-bottom: 70px;
+	margin-inline: 20px;
+	padding-inline: 20px;
+	padding-block: 28px;
+
+	background-size: 20px 20px;
+	background-image:
+		linear-gradient(to right, var(--grid-bg) 1px, transparent 1px),
+		linear-gradient(to bottom, var(--grid-bg) 1px, transparent 1px);
+
+	&>p {
+		padding: 6px;
+		background-color: var(--white);
+		border: solid 1px var(--black);
+		border-radius: 4px;
+
+		font-weight: 600;
+	}
+
+	&>:nth-child(1) {
+		transform: rotate(-6deg);
+	}
+
+	&>:nth-child(2) {
+		transform: rotate(4deg);
+	}
+
+	&>:nth-child(3) {
+		transform: rotate(-6deg);
+	}
+
+}
+
+
+.block-quotes {
+
+	width: fit-content;
+	max-width: 1100px;
+	text-align: center;
+
+
+	padding-inline: 20px;
+	padding-block: 20px;
+
+	font-size: 20px;
+	line-height: 30px;
+
+
+	font-style: italic;
+
+	margin-block: 54px;
+
+	border: 1px solid var(--black);
+	border-radius: 4px;
+
+	&>span {
+		font-style: italic;
+		font-weight: 600;
+	}
+
+}
+
+.text-highlight {
+	text-wrap: nowrap;
+	border: 1px solid var(--black);
+	font-weight: 600;
+	padding: 0.02rem 0.20rem;
+	background-size: 10px 10px;
+	background-image:
+		linear-gradient(to right, var(--grid-bg) 1px, transparent 1px),
+		linear-gradient(to bottom, var(--grid-bg) 1px, transparent 1px);
+}
+
 
 .special-highlight {
 
-	width: auto;
 	display: block;
 	padding-inline: 2px;
 	padding-bottom: 2px;
 	padding-top: 6px;
-	border: solid 3px var(--black);
+	border: solid 1px var(--black);
 	width: fit-content;
 
 
-	background-size: 40px 40px;
+	background-size: 20px 20px;
 	background-image:
-		linear-gradient(to right, grey 1px, transparent 1px),
-		linear-gradient(to bottom, grey 1px, transparent 1px);
+		linear-gradient(to right, var(--grid-bg) 1px, transparent 1px),
+		linear-gradient(to bottom, var(--grid-bg) 1px, transparent 1px);
 
+}
+
+.special-background {
+	background-size: 20px 20px;
+	background-image:
+		linear-gradient(to right, var(--title2-bg) 1px, transparent 1px),
+		linear-gradient(to bottom, var(--title2-bg) 1px, transparent 1px);
 }
 
 
@@ -53,7 +143,7 @@ h1 {
 
 		gap: 30px;
 
-		&>:nth-child(1) {
+		&>:nth-child(2) {
 			width: 200px;
 			height: 70%;
 
@@ -78,7 +168,7 @@ h1 {
 
 		}
 
-		&>:nth-child(2) {
+		&>:nth-child(1) {
 			width: 200px;
 			height: 70%;
 
@@ -90,38 +180,113 @@ h1 {
 
 	}
 
+	.div-2 {
+
+		font-weight: 600;
+
+		margin-top: 24px;
+		width: 30%;
 
 
-	
+		&>:nth-child(2) {
+			margin-top: 24px;
 
-	h1 {
-		font-size: 90px;
-		line-height: 120px;
+			border: 1px solid black;
 
-		padding: 0px;
+			height: 30%;
 
-		margin-top: 130px;
-		margin-bottom: 62px;
+
+			background-color: var(--white);
+
+			background-image: linear-gradient(var(--black), transparent 2px), linear-gradient(90deg, var(--black) 2px, transparent 2px), linear-gradient(var(--black) 1px, transparent 1px), linear-gradient(90deg, var(--black) 1px, var(--white) 1px);
+			background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+			background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+		}
+
+		&>:nth-child(1) {
+
+			border: 1px solid rgb(133, 133, 133);
+
+			height: 30%;
+
+			background-color: #ffffff;
+
+			background-image: linear-gradient(30deg, #dbd7d7 12%, transparent 12.5%, transparent 87%, #dbd7d7 87.5%, #dbd7d7), linear-gradient(150deg, #dbd7d7 12%, transparent 12.5%, transparent 87%, #dbd7d7 87.5%, #dbd7d7), linear-gradient(30deg, #dbd7d7 12%, transparent 12.5%, transparent 87%, #dbd7d7 87.5%, #dbd7d7), linear-gradient(150deg, #dbd7d7 12%, transparent 12.5%, transparent 87%, #dbd7d7 87.5%, #dbd7d7), linear-gradient(60deg, #dbd7d777 25%, transparent 25.5%, transparent 75%, #dbd7d777 75%, #dbd7d777), linear-gradient(60deg, #dbd7d777 25%, transparent 25.5%, transparent 75%, #dbd7d777 75%, #dbd7d777);
+			background-size: 48px 84px;
+			background-position: 0 0, 0 0, 24px 42px, 24px 42px, 0 0, 24px 42px;
+		}
+
 
 	}
+
+
+
+	.grid-container {
+		margin:auto;
+		width: 30%;
+
+		display: grid;
+		grid-template-columns: repeat(3, 100px);
+		grid-gap: 8px;
+
+	}
+
+	.grid-item {
+
+		background-color: var(--white);
+		border: solid 1px var(--black);
+		border-radius: 2px;
+		height: 100px;
+
+	}
+
+	.grid-item.highlighted {
+		background-color: var(--black);
+	}
+
+
+
 
 
 	.special-highlight {
+		display: inline;
+		width: fit-content;
 		padding-inline: 14px;
-		padding-bottom: 6px;
-		padding-top: 22px;
+
+		background-size: 40px 40px;
+		background-image:
+			linear-gradient(to right, rgb(170, 170, 170) 1px, transparent 1px),
+			linear-gradient(to bottom, rgb(162, 162, 162) 1px, transparent 1px);
 
 
 	}
 
-
-	h1 {
-		display: flex;
-		flex-direction: row;
-		gap: 1rem;
-		align-items: center;
+	.text-highlight {
+		border: 2px solid var(--black);
 	}
 
+	.block-quotes {
+		margin-inline: auto;
+		font-size: 26px;
+		line-height: 40px;
+
+		padding: 44px;
+		margin-block: 75px;
+	}
+
+	.floating-quotes {
+
+		margin-bottom: 130px;
+
+		justify-content: center;
+		gap: 2rem;
+		font-size: 32px;
+		line-height: 50px;
+		padding-block: 60px;
 
 
+		&>p {
+			padding-inline: 24px;
+		}
+	}
 }

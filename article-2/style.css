@@ -1,14 +1,4 @@
-h1 {
-	padding-inline: 20px;
-	width: fit-content;
-	text-transform: uppercase;
 
-	vertical-align: middle;
-	font-weight: 600;
-
-	margin-bottom: 44px;
-	margin-top: 34px;
-}
 
 
 /* decorative elements */
@@ -27,16 +17,7 @@ h1 {
 
 @media (min-width: 1512px) {
 
-	h1 {
-		font-size: 90px;
-		line-height: 120px;
 
-		padding: 0px;
-
-		margin-top: 130px;
-		margin-bottom: 62px;
-
-	}
 
 	.special-highlight{
 		font-size: 120px;
