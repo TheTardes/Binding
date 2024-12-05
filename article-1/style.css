@@ -308,6 +308,7 @@ h1{
 
 		&>:nth-child(2) {
 		
+
 			height: 30%;
 			width: 100%;
 
@@ -344,7 +345,7 @@ h1{
 		width: fit-content;
 		padding-inline: 14px;
 
-		background-size: 40px 40px;
+		background-size: 30px 30px;
 		background-image:
 			linear-gradient(to right, rgb(170, 170, 170) 1px, transparent 1px),
 			linear-gradient(to bottom, rgb(162, 162, 162) 1px, transparent 1px);
