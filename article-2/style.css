@@ -33,6 +33,37 @@ h1 {
 
 /* decorative divs */
 
+.fragmentation {
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-inline: 20px;
+	width: fit-content;
+	height: fit-content;
+	animation: enlarge 3s infinite ease-in-out;
+	margin-bottom: 34px;
+
+	& .square {
+		width: 40px;
+		height: 40px;
+		background-color: var(--main-color-1);
+	}
+}
+
+@keyframes enlarge {
+
+	0%,
+	100% {
+		padding-bottom: 20px;
+		gap: 0px;
+	}
+
+	50% {
+		padding-bottom: 0px;
+		gap: 20px;
+	}
+}
+
 .animated-decoration {
 	margin-inline: 20px;
 	margin-bottom: 24px;
@@ -80,13 +111,13 @@ h1 {
 
 	width: fit-content;
 	margin-inline: 20px;
-	margin-bottom:30px ;
+	margin-bottom: 30px;
 
 	color: var(--main-color-1);
 
 
-	& span{
-	
+	& span {
+
 		-webkit-text-fill-color: white;
 		-webkit-text-stroke-width: 1px;
 		-webkit-text-stroke-color: var(--main-color-1);
@@ -197,6 +228,31 @@ h1 {
 
 
 	/* decorative divs */
+	.fragmentation {
+	
+		animation: enlarge 2s infinite ease-in-out;
+		margin: auto;
+
+		& .square {
+			width: 150px;
+			height: 150px;
+		}
+	}
+
+	@keyframes enlarge {
+
+		0%,
+		100% {
+			padding-bottom: 0px;
+			gap: 0px;
+		}
+
+		50% {
+			gap: 20px;
+		}
+	}
+
+
 
 	.animated-decoration {
 		margin-inline: auto;
@@ -211,7 +267,7 @@ h1 {
 		text-align: center;
 		font-size: 2rem;
 		line-height: 2rem;
-		
+
 		width: 30%;
 		margin: auto;
 
