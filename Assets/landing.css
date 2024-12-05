@@ -1,3 +1,7 @@
+:root {
+	--title2-bg: #CECECE;
+}
+
 /* margins */
 
 .top-12 {
@@ -5,26 +9,6 @@
 	display: block;
 }
 
-
-
-/*  decorative-fonts */
-
-.chaos-font {
-	font-family: "Rubik Maze", system-ui;
-	font-weight: 600;
-	font-style: italic;
-	/* font-size: 100px; */
-}
-
-.structure-font {
-	font-family: "Rubik Doodle Shadow", system-ui;
-	/* font-size: 100px; */
-}
-
-.simplicity-font {
-	font-family: "Rubik", sans-serif;
-	font-weight: 200;
-}
 
 
 
@@ -40,7 +24,7 @@ h1 {
 	font-size: 42px;
 	line-height: 56px;
 
-	& .weird-line {
+	/* & .weird-line {
 		margin-top: 12px;
 		height: 2px;
 		width: 100%;
@@ -63,7 +47,7 @@ h1 {
 			border-radius: 50%;
 			cursor: pointer;
 		}
-	}
+	} */
 }
 
 
@@ -82,58 +66,118 @@ h1 {
 
 
 
-.relative{
-	position: relative;
+
+
+/* decorative texts */
+
+
+.structure {
+
+	display: block;
+	margin-bottom: 12px;
+	margin-top: 6px;
+	color: #000BA0;
+	padding-inline: 0.5rem;
+	padding-top: 0.5rem;
+	
+	border: solid 2px #000BA0;
+	background-size: 20px 20px;
+	background-image:
+		linear-gradient(to right, var(--title2-bg) 1px, transparent 1px),
+		linear-gradient(to bottom, var(--title2-bg) 1px, transparent 1px);
+
+	&:hover {
+		background-color: #000BA0;
+		color: var(--white);
+		background-image: none;
+	}
 }
 
-.dropdown {
+
+.simplicity {
+	
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #007A37;
 
 
-	& aside {
-	  display: none;
-  
-	  position: absolute;
-	  top: 100%;
-	  left: 0;
-	  
-	  /* transform: translateX(-80%); */
-	  width: 1296px;
-  
-	  background: var(--white);
-	  border: 1px solid var(--black);
-	  padding: 16px;
-  
-	  text-align: left;
-  
-	  & h2 {
-		font-size: 1.5rem;
-		line-height: 2;
-	  }
-	  & h3 {
-		font-size: 1rem;
-		line-height: 2;
-	  }
-	  & p {
-		font-size: 0.875rem;
-		line-height: 2;
-	  }
-  
-	  & button {
-		font-size: 1rem;
-		line-height: 2;
-		text-align: center;
-		width: 100%;
-		border: 1px solid black;
-		border-radius: 8px;
-	  }
+	border-bottom: solid 2px #007A37;
+
+	&:hover {
+		-webkit-text-fill-color: #007A37;
+		
 	}
-	&:hover aside {
-	  display: block;
+}
+
+.chaos{
+	color: #870054;
+
+
+	font-size: 62px;
+
+
+	letter-spacing: -8.7px;
+
+	font-family: "Rubik Glitch", system-ui;
+	font-weight: 100;
+
+	&>:nth-child(1) {
+		color: #F600C5;
 	}
-  }
+
+	&>:nth-child(2) {
+		color: #F00;
+	}
+
+	&:hover {
+
+		letter-spacing: -18.7px;
+	
+	}
+
+}
+
+
+
+
+
 
 
 @media (min-width: 1512px) {
+
+	.structure {
+		display: inline;
+		color: #000BA0;
+		padding-inline: 0.5rem;
+		padding-top: 0.5rem;
+		border: solid 2px #000BA0;
+		background-size: 20px 20px;
+		background-image:
+			linear-gradient(to right, var(--title2-bg) 1px, transparent 1px),
+			linear-gradient(to bottom, var(--title2-bg) 1px, transparent 1px);
+	
+		&:hover {
+			background-color: #000BA0;
+			color: var(--white);
+			background-image: none;
+		}
+	}
+
+	.simplicity {
+	
+		-webkit-text-fill-color: white;
+		-webkit-text-stroke-width: 4px;
+		-webkit-text-stroke-color: #007A37;
+	
+		border-bottom: solid 4px #007A37;
+	
+	}
+
+	.chaos{
+	
+		font-size: 110px;
+	
+	}
 
 	h1 {
 		margin-top: 100px;
@@ -143,7 +187,7 @@ h1 {
 		line-height: 100px;
 		padding-inline: 0px;
 
-		& .weird-line {
+		/* & .weird-line {
 			margin-top: 32px;
 
 			width: 500px;
@@ -154,7 +198,7 @@ h1 {
 		& .slider {
 			margin-top: 10px;
 			width: 500px;
-		}
+		} */
 	}
 
 
@@ -168,13 +212,13 @@ h1 {
 		padding-inline: 0px;
 	}
 
-	.colophone{
+	.colophone {
 		width: 50%;
 		font-size: 20px;
 		line-height: 34px;
 	}
 
-	.create{
+	.create {
 		width: 60%;
 	}
 
