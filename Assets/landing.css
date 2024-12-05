@@ -23,36 +23,12 @@ h1 {
 
 	font-size: 42px;
 	line-height: 56px;
-
-	/* & .weird-line {
-		margin-top: 12px;
-		height: 2px;
-		width: 100%;
-		background-color: var(--black);
-		display: block;
-		transform: rotate(-2.17deg);
-	}
-
-	& .slider {
-		margin-top: 14px;
-		width: 100%;
-
-		&::-webkit-slider-thumb {
-			-webkit-appearance: none;
-			appearance: none;
-			width: 25px;
-			height: 25px;
-			background: transparent;
-			border: 1px solid var(--black);
-			border-radius: 50%;
-			cursor: pointer;
-		}
-	} */
 }
 
 
 
 /* specific tags */
+
 
 
 .container-h2 {
@@ -120,6 +96,7 @@ h1 {
 
 	font-family: "Rubik Glitch", system-ui;
 	font-weight: 100;
+	transition: letter-spacing 1s ease-in-out;
 
 	&>:nth-child(1) {
 		color: #F600C5;
@@ -132,12 +109,38 @@ h1 {
 	&:hover {
 
 		letter-spacing: -18.7px;
+
 	
 	}
 
 }
 
+/* decorative line */
 
+	.weird-line {
+		margin-top: 12px;
+		height: 2px;
+		width: 100%;
+		background-color: var(--black);
+		display: block;
+		transform: rotate(-2.17deg);
+	}
+
+	.slider {
+		margin-top: 14px;
+		width: 100%;
+
+		&::-webkit-slider-thumb {
+			-webkit-appearance: none;
+			appearance: none;
+			width: 25px;
+			height: 25px;
+			background: transparent;
+			border: 1px solid var(--black);
+			border-radius: 50%;
+			cursor: pointer;
+		}
+	}
 
 
 
