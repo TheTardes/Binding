@@ -1,108 +1,259 @@
-
-
-:root{
-	--main-color-1:#870054;
-	--bg-color-1: #f8f0fa;
+:root {
+	--main-color-1: #870054;
+	--bg-color-1: #f9f4fa;
 	background-color: var(--bg-color-1);
+
 }
 
-h1{
+h1 {
 	color: var(--main-color-1);
 }
 
-.h2-landing-sm{
+quote {
+	font-size: 1rem;
+	font-style: italic;
+	font-weight: 400;
+
+}
+
+.h2-landing-sm {
 	color: var(--main-color-1);
 	border-color: var(--main-color-1);
+	font-family: "Libre Franklin", sans-serif;
 }
 
 
-.title-2{
-	border-bottom: 2px solid var(--main-color-1);
+.title-2 {
+	border: 4px var(--main-color-1);
+
+	border-style: solid none dashed;
 	color: var(--main-color-1);
+
+
+	font-family: "Rubik Glitch", system-ui;
+	font-weight: 100;
+	font-size: 36px;
+	line-height: 48px;
+
+	&>span {
+		transform: rotate(-5deg);
+	}
+
+
 }
 
 /* decorative elements */
 
-
-.special-highlight {
-
+.special-h1 {
 
 	display: inline-block;
 	transform: rotate(-5deg);
 
 	text-shadow: 7px 2px 2.3px rgba(0, 0, 0, 0.25);
-	font-size: 60px;
-
-
+	font-size: 70px;
 
 	letter-spacing: -8.7px;
 
+	font-family: "Rubik Glitch", system-ui;
+	font-weight: 400;
 
 	&>:nth-child(1) {
 		color: #F600C5;
-
-
 		letter-spacing: -5.7px;
-
 	}
 
 	&>:nth-child(2) {
 		color: #F00;
-
 		letter-spacing: -8.7px;
-
 	}
 
 	&>:nth-child(3) {
-
 		color: #009502;
-
 		letter-spacing: -8.7px;
+	}
+
+}
+
+.text-highlight {
+	font-family: "Rubik Glitch", system-ui;
+	font-weight: 100;
+	font-size: 1.2rem;
+	color: var(--main-color-1);
+	margin-inline: 0.3rem;
+}
+
+.special-highlight {
+
+	display: inline-block;
+	transform: rotate(-3deg);
+
+	margin-right: 0.5rem;
 
 
+	letter-spacing: -1.7px;
+
+	font-family: "Rubik Glitch", system-ui;
+
+	&>:nth-child(1) {
+		color: #F600C5;
+		letter-spacing: -5.7px;
+	}
+
+	&>:nth-child(2) {
+		color: #F00;
+		letter-spacing: -8.7px;
+	}
+
+	&>:nth-child(3) {
+		color: #009502;
+		letter-spacing: -8.7px;
+	}
+}
+
+
+.block-quotes {
+
+	width: fit-content;
+	max-width: 1100px;
+	text-align: center;
+
+
+	padding-inline: 24px;
+	padding-block: 24px;
+
+	font-size: 20px;
+	line-height: 30px;
+
+
+	font-style: italic;
+
+	margin-block: 54px;
+
+	border: 4px solid var(--main-color-1);
+	border-style: solid double dashed;
+	color: var(--main-color-1);
+	border-radius: 4px;
+
+	&>span {
+		font-weight: 100;
+		font-family: "Rubik Glitch", system-ui;
+		font-size: 1.3rem;
+		margin-right: 0.3rem;
 	}
 
 }
 
 @media (min-width: 1512px) {
 
+	.div-1 {
+		width: 20%;
+		height: 300px;
+		border-radius: 50%;
+		margin: auto;
+		background-color: #ffffff;
+		opacity: 1;
+		background-image: radial-gradient(circle at center center, #8d0158, #ffffff), repeating-radial-gradient(circle at center center, #8d0158, #8d0158, 40px, transparent 80px, transparent 40px);
+		background-blend-mode: multiply;
+	}
+
+	.punk{
+		margin: auto;
+		font-size: 100px;
+		line-height: 120px;
+		color: var(--bg-color-1);
+		font-weight: 800;
+		display: flex;
+		flex-direction: row;
+		gap: 2px;
+
+		&p{
+			padding-inline: 6px;
+		}
+
+		&>:nth-child(1){
+			background-color: #009502;
+			transform:rotate(-5deg);
+		}
+
+		&>:nth-child(2){
+			background-color:#F600C5;
+			transform:rotate(5deg);
+		}
+
+		&>:nth-child(3){
+			background-color:#870054;
+			transform:rotate(-5deg);
+		}
+
+		&>:nth-child(4){
+			background-color:#F00;
+			transform:rotate(5deg);
+		}
+
+
+	}
 	
 
-	.special-highlight {
+	  .punk span:nth-child(5n+1) {
+		transform:rotate(5deg);
+	  }
+	  
+	  .punk span:nth-child(5n+2) {
+		transform:rotate(-5deg);
+	  }
+	  
+	  .punk span:nth-child(5n+3) {
+		transform:rotate(5deg);
+	  }
+	  
+	  .punk span:nth-child(5n+4) {
+		transform:rotate(-5deg);
+	  }
+
+
+	.title-2 {
+		font-size: 80px;
+		line-height: 90px;
+
+		border: 8px var(--main-color-1);
+		border-style: solid double dashed;
+	}
+
+	.special-h1 {
 
 		transform: rotate(-10deg);
 
-		font-size: 120px;
+		font-size: 130px;
 		text-shadow: 17px 22px 12.3px rgba(0, 0, 0, 0.25);
-
-
 
 		letter-spacing: -18.7px;
 
-
 		&>:nth-child(1) {
-			color: #F600C5;
-
-
 			letter-spacing: -18.7px;
-
 		}
 
 		&>:nth-child(2) {
-			color: #F00;
-
 			letter-spacing: -18.7px;
-
 		}
 
 		&>:nth-child(3) {
-
-			color: #009502;
-
 			letter-spacing: -18.7px;
-
-
 		}
 
+	}
+
+	.special-highlight {
+		margin-left: 0.5rem;
+	}
+
+	.block-quotes {
+		border: 6px solid var(--main-color-1);
+		border-style: solid double dashed;
+		margin-inline: auto;
+		font-size: 26px;
+		line-height: 40px;
+
+		padding: 44px;
+		margin-block: 75px;
 	}
 }

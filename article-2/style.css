@@ -1,36 +1,98 @@
-:root{
-	--main-color-1:#007A37;
+:root {
+	--main-color-1: #007A37;
 	--bg-color-1: #f3fbfa;
 	background-color: var(--bg-color-1);
 }
 
-h1{
+h1 {
 	color: var(--main-color-1);
 }
 
-.h2-landing-sm{
+.h2-landing-sm {
 	color: var(--main-color-1);
 	border-color: var(--main-color-1);
 }
 
 
-.title-2{
+.title-2 {
 	border-bottom: 2px solid var(--main-color-1);
 	color: var(--main-color-1);
 }
 
-.list{
+.list {
 	margin-block: 1rem;
 	list-style: square;
 	list-style-position: inside;
-	
 
-	&>li{
+
+	&>li {
 		margin-bottom: 0.5rem;
 	}
 
 }
 
+/* decorative divs */
+
+.animated-decoration {
+	margin-inline: 20px;
+	margin-bottom: 24px;
+	width: 50%;
+	height: 100px;
+
+	border-radius: 0% 100% 100% 100% / 100% 100% 0% 100%;
+
+
+	border: 2px solid var(--main-color-1);
+
+
+	animation: ordinary 3s infinite alternate ease-in-out;
+
+}
+
+@keyframes ordinary {
+	0% {
+
+		background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+
+	}
+
+	50% {
+		background: var(--white);
+
+		border-radius: 0;
+
+	}
+
+	100% {
+		background: var(--white);
+		border: 2px solid black;
+
+		border-radius: 0;
+
+	}
+}
+
+.div-text-decoration {
+	text-align: left;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+	font-weight: 900;
+
+	width: fit-content;
+	margin-inline: 20px;
+	margin-bottom:30px ;
+
+	color: var(--main-color-1);
+
+
+	& span{
+	
+		-webkit-text-fill-color: white;
+		-webkit-text-stroke-width: 1px;
+		-webkit-text-stroke-color: var(--main-color-1);
+
+	}
+}
 
 
 /* decorative elements */
@@ -86,7 +148,7 @@ h1{
 
 	border-left: 3px solid var(--main-color-1);
 	color: var(--main-color-1);
-	
+
 
 	&>span {
 		text-transform: uppercase;
@@ -95,7 +157,7 @@ h1{
 
 }
 
-.floating-quotes{
+.floating-quotes {
 	display: flex;
 	justify-content: center;
 	gap: 1rem;
@@ -133,8 +195,33 @@ h1{
 
 @media (min-width: 1512px) {
 
+
+	/* decorative divs */
+
+	.animated-decoration {
+		margin-inline: auto;
+		margin-top: 44px;
+		width: 30%;
+		height: 500px;
+
+		border-radius: 0% 100% 5% 100% / 100% 100% 7% 71%;
+	}
+
+	.div-text-decoration {
+		text-align: center;
+		font-size: 2rem;
+		line-height: 2rem;
+		
+		width: 30%;
+		margin: auto;
+
+	}
+
+
+
+
 	.block-quotes {
-	
+
 		font-size: 26px;
 		line-height: 40px;
 
@@ -149,18 +236,18 @@ h1{
 
 
 		gap: 2rem;
-	
+
 		padding-block: 60px;
 
 
 		&>p {
 			font-size: 64px;
-		line-height: 80px;
+			line-height: 80px;
 			padding-inline: 24px;
 		}
 	}
 
-	.special-highlight{
+	.special-highlight {
 		margin-bottom: 32px;
 		-webkit-text-stroke-width: 2px;
 		font-size: larger;
