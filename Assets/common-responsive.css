@@ -61,7 +61,7 @@
 
 	:root {
 		font-size: 20px;
-		line-height: 38px;
+		line-height: 34px;
 	}
 
 	body {
@@ -88,7 +88,7 @@
 
 
 		margin-top: 30px;
-		margin-bottom: 110px;
+		margin-bottom: 10px;
 
 		&>section {
 
@@ -133,9 +133,12 @@
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
-		gap: 50px;
+		gap: 80px;
 
-		margin-top: 150px;
+		margin-top: 170px;
+
+		font-size: 18px;
+		line-height: 28px;
 
 	}
 
@@ -259,10 +262,12 @@
 
 	.h2-landing-sm {
 
-		border-bottom: 2px solid var(--black);
+		padding-bottom: 18px;
 
-		font-size: 26px;
-		line-height: 38px;
+		font-size: 24px;
+		line-height: 33px;
+
+		margin-bottom: 56px;
 
 	}
 
@@ -331,8 +336,9 @@
 	}
 
 	.two-column-style {
-		gap: 70px;
-
+		gap: 100px;
+		font-size: 20px;
+		line-height: 30px;
 		margin-top: 170px;
 
 	}
@@ -358,22 +364,6 @@
 		}
 	}
 
-
-
-	/* titles, text sizes */
-
-
-
-	.h2-landing-sm {
-
-		padding-bottom: 18px;
-
-		font-size: 32px;
-		line-height: 43px;
-
-		margin-bottom: 56px;
-
-	}
 
 	
 }

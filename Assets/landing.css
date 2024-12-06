@@ -208,14 +208,15 @@ h1 {
 
 	.container-h2 {
 		padding-inline: 0px;
+		margin-top: 60px;
 	}
 
 	.colophone {
-		width: 60%;
+		width: 50%;
 	}
 
 	.create {
-		width: 40%;
+		width: 50%;
 	}
 
 
@@ -265,6 +266,7 @@ h1 {
 	/* margins, paddings */
 
 	.balance {
+		margin-top: 130px ;
 		padding-block: 44px;
 	}
 
@@ -295,11 +297,6 @@ h1 {
 
 
 	/* locating containers */
-
-	article {
-
-		gap: 52px;
-	}
 
 
 }
