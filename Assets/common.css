@@ -423,7 +423,7 @@ quote {
 			text-decoration: underline;
 			font-size: 1.3rem;
 
-			padding-bottom: var(height);
+			padding-bottom: var(--height);
 
 			& li {
 				padding-block: 30px;
