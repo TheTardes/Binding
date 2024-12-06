@@ -29,6 +29,7 @@ h1 {
 .container-h2 {
 	margin-bottom: 56px;
 	padding-inline: 20px;
+	margin-top: 74px;
 
 	&>p {
 		margin-top: 20px;
