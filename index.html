@@ -10,6 +10,7 @@
 	<link href="Assets/reset.css" rel="stylesheet">
 	<link href="Assets/landing.css" rel="stylesheet">
 	<link href="Assets/items-animation.css" rel="stylesheet">
+	<link href="Assets/skewed-line.css" rel="stylesheet">
 
 	<!-- fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +20,7 @@
 </head>
 
 <body>
-	<header>
+	<header id="top">
 		<nav>
 			<a class="uppercase" href="index.html">
 				<span class="square-logo"></span>
@@ -44,11 +45,10 @@
 		</nav>
 
 		<h1>
-
 			<span class="top-12 align-2 ">
 				How
 				<span>
-					<a href="article-1/index.html" class="uppercase  structure">structure,</a>
+					<a href="article-1/index.html" class="uppercase structure">structure,</a>
 				</span>
 			</span>
 
@@ -124,26 +124,28 @@
 				</div>
 			</section>
 
-			<section>
+			<section class="balance">
 
-				<p>
-					Design's Balance:
-				</p>
-				<span class="weird-line"></span>
-				<input type="range" class="slider">
+				<h3 class="uppercase">Design's Balance</h3>
+
+				<div class="line-skewer">
+					<div class="circle"></div>
+					<div class="weird-line"></div>
+				</div>
+
 
 			</section>
-
 
 		</section>
 
 	</article>
 
+
 	<footer class="padding-20">
 
 		<p>Inji Mammadli</p>
 
-		<a class="nav-text">Back to top</a>
+		<a class="footer-link" href="#top">Back to top</a>
 	</footer>
 
 </body>

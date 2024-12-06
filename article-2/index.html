@@ -18,7 +18,7 @@
 
 <body>
 
-	<header>
+	<header id="top">
 
 		<nav>
 			<a class="uppercase" href="../index.html">
@@ -35,7 +35,7 @@
 			<ul>
 				<li><a href="../article-1/index.html">Article 1</a>
 				</li>
-				<li><a href="../article-2/index.html">Article 2</a>
+				<li><a href="../article-2/index.html" class="selected">Article 2</a>
 				</li>
 				<li><a href="../article-3/index.html">Article 3</a>
 				</li>
@@ -43,7 +43,7 @@
 
 		</nav>
 
-		<h1>Towards a complex <span class="special-highlight-h1">Simplicity</span></h1>
+		<h1 class="upercase">Towards a complex <span class="special-highlight-h1">Simplicity</span></h1>
 
 		<section class="uppercase author-name padding-20">
 			<p>Best Design is</p>
@@ -380,11 +380,16 @@
 
 	</article>
 
+	<section class="additional-footer">
+		<p class="button-secondary uppercase"><a href="../article-1/index.html">previous article</a></p>
+		<p class="button-secondary uppercase"><a href="../article-3/index.html">next article</a></p>
+	</section>
+
 	<footer class="padding-20">
 
 		<p>Inji Mammadli</p>
 
-		<a class="nav-text">Back to top</a>
+		<a class="footer-link" href="#top">Back to top</a>
 	</footer>
 
 

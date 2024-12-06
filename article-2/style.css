@@ -8,6 +8,7 @@ h1 {
 	color: var(--main-color-1);
 }
 
+
 .h2-landing-sm {
 	color: var(--main-color-1);
 	border-color: var(--main-color-1);
@@ -24,12 +25,11 @@ h1 {
 	list-style: square;
 	list-style-position: inside;
 
-
 	&>li {
 		margin-bottom: 0.5rem;
 	}
-
 }
+
 
 /* decorative divs */
 

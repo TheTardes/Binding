@@ -1,6 +1,7 @@
 :root {
 	--black: #1A1A1A;
 	--bg: #f8fafc;
+	--bg-color-1:#f8fafc;
 	--dec-font: "Amiko", serif;
 	--highlight: #222222;
 	--white: #ffffff;
@@ -36,7 +37,6 @@ h1 {
 
 	padding-inline: 20px;
 	width: fit-content;
-	text-transform: uppercase;
 
 	vertical-align: middle;
 	font-weight: 600;
@@ -48,6 +48,10 @@ h1 {
 .nav-text{
 	text-decoration: underline;
 	text-transform: uppercase;
+}
+
+.selected{
+	font-weight: 800;
 }
 
 nav {
@@ -71,13 +75,27 @@ nav {
 		align-items: center;
 
 	}
+
 }
 
 
 nav:has(input:checked) ul {
 	top: 100%;
+	background-color: var(--bg-color-1);
 }
 
+.additional-footer{
+	padding-inline: 20px;
+	margin-top: 44px;
+
+	.button-secondary{
+		margin-bottom: 12px;
+		padding-inline: 1rem;
+		padding-block: 12px;
+	}
+
+	cursor: pointer;
+}
 
 footer {
 	margin-top: 80px;
@@ -92,6 +110,17 @@ footer {
 		width: fit-content;
 		gap: 6px;
 		text-wrap: nowrap;
+	}
+
+	.footer-link{
+		padding-inline: 0.3rem;
+		text-decoration: underline;
+		text-transform: uppercase;
+
+		&:hover{
+			background-color: var(--main-color-1);
+			color: var(--bg-color-1);
+		}
 	}
 }
 
@@ -290,12 +319,13 @@ quote {
 
 }
 
+
 .button-secondary {
 
 	border: solid 1px var(--black);
 	border-radius: 4px;
 
-	background-color: var(--bg);
+	background-color: var(--bg-color-1);
 
 	padding-block: 8px;
 

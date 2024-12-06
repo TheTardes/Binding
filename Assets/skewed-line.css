@@ -1,0 +1,102 @@
+:root {
+	--timing: 5000ms;
+	--top: 0px;
+	--upper: -12px;
+  }
+  
+  
+  @keyframes tilt {
+	0% {
+	  transform: rotate(-2.17deg);
+	}
+  
+	10%,
+	50% {
+	  transform: rotate(2.17deg);
+	}
+  
+	60%,
+	100% {
+	  transform: rotate(-2.17deg);
+	}
+  }
+  
+  @keyframes slide {
+	0% {
+	  top: var(--top);
+  
+	  left: 0;
+	  transform: translateX(0%);
+	}
+  
+	10% {
+	  top: var(--upper);
+  
+	  left: 0;
+	  transform: translateX(0%);
+	}
+  
+	50% {
+	  top: var(--top);
+  
+	  left: 100%;
+	  transform: translateX(-100%);
+	}
+  
+	60% {
+	  top: var(--upper);
+  
+	  left: 100%;
+	  transform: translateX(-100%);
+	}
+  
+	100% {
+	  top: var(--top);
+  
+	  left: 0;
+	  transform: translateX(0);
+	}
+  }
+  
+  .line-skewer {
+	width: 300px;
+	height: 40px;
+	margin-inline: auto;
+	position: relative;
+	padding-top: 18px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+  
+	& .weird-line {
+	  height: 2px;
+	  width: 100%;
+	  background-color: var(--black);
+	  animation: tilt var(--timing) linear infinite;
+	}
+  
+	& .circle {
+	  top: var(--top);
+	  position: absolute;
+	  width: 25px;
+	  height: 25px;
+	  background-color: var(--black);
+	  border-radius: 50%;
+	  animation: slide var(--timing) linear infinite;
+	}
+  }
+  
+  @media (min-width: 1512px) {
+	.line-skewer {
+	  width: 600px;
+	  padding-top: 14px;
+
+	  }
+
+	  :root {
+		--top: 0px;
+		--upper: -20px;
+	  }
+	}
+  
+	
+  

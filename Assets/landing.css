@@ -10,9 +10,6 @@
 }
 
 
-
-
-
 h1 {
 	padding-inline: 20px;
 	text-align: center;
@@ -40,6 +37,24 @@ h1 {
 	}
 }
 
+.balance{
+
+	margin-top: 3rem;
+	border: solid 1px var(--black);
+	background-color: var(--white);
+
+	padding-block: 34px;
+
+
+	& h3{
+		margin-inline: auto;
+		margin-bottom: 3rem;
+		text-align: center;
+		font-weight: 800;
+	}
+
+}
+
 
 
 
@@ -50,6 +65,8 @@ h1 {
 .structure {
 
 	display: block;
+	width: fit-content;
+	margin-inline: auto;
 	margin-bottom: 12px;
 	margin-top: 6px;
 	color: #000BA0;
@@ -115,38 +132,15 @@ h1 {
 
 }
 
-/* decorative line */
-
-	.weird-line {
-		margin-top: 12px;
-		height: 2px;
-		width: 100%;
-		background-color: var(--black);
-		display: block;
-		transform: rotate(-2.17deg);
-	}
-
-	.slider {
-		margin-top: 14px;
-		width: 100%;
-
-		&::-webkit-slider-thumb {
-			-webkit-appearance: none;
-			appearance: none;
-			width: 25px;
-			height: 25px;
-			background: transparent;
-			border: 1px solid var(--black);
-			border-radius: 50%;
-			cursor: pointer;
-		}
-	}
-
 
 
 
 
 @media (min-width: 1512px) {
+
+	.balance{
+		padding-block:44px;
+	}
 
 	.structure {
 		display: inline;
@@ -189,19 +183,6 @@ h1 {
 		font-size: 80px;
 		line-height: 100px;
 		padding-inline: 0px;
-
-		/* & .weird-line {
-			margin-top: 32px;
-
-			width: 500px;
-			display: block;
-			transform: rotate(-2.17deg);
-		}
-
-		& .slider {
-			margin-top: 10px;
-			width: 500px;
-		} */
 	}
 
 
@@ -224,6 +205,8 @@ h1 {
 	.create {
 		width: 60%;
 	}
+
+	
 
 
 
