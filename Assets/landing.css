@@ -270,6 +270,10 @@ h1 {
 		padding-block: 44px;
 	}
 
+	h1{
+		margin-top: 150px;
+	}
+
 
 	.colophone {
 		width: 50%;

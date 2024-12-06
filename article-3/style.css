@@ -81,7 +81,7 @@ quote {
 
 	background-color: #ffffff;
 
-	background-image: radial-gradient(circle at center center, #8d0158, #ffffff), repeating-radial-gradient(circle at center center, #8d0158, #8d0158, 20px, transparent 40px, transparent 20px);
+	background-image: radial-gradient(circle at center center, #8d0158, #ffffff), repeating-radial-gradient(circle at center center, #8d0158, #8d0158, 20px, transparent 30px, transparent 20px);
 	background-blend-mode: multiply;
 }
 
@@ -261,8 +261,7 @@ quote {
 
 	.balance {
 		width: 20%;
-		height: 200px;
-		border-radius: 50%;
+	
 		margin: auto;
 
 		background-image: radial-gradient(circle at center center, #8d0158, #ffffff), repeating-radial-gradient(circle at center center, #8d0158, #8d0158, 30px, transparent 60px, transparent 30px);
