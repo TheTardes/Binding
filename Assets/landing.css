@@ -37,7 +37,7 @@ h1 {
 	}
 }
 
-.balance{
+.balance {
 
 	margin-top: 3rem;
 	border: solid 1px var(--black);
@@ -46,7 +46,7 @@ h1 {
 	padding-block: 34px;
 
 
-	& h3{
+	& h3 {
 		margin-inline: auto;
 		margin-bottom: 3rem;
 		text-align: center;
@@ -72,7 +72,7 @@ h1 {
 	color: #000BA0;
 	padding-inline: 0.5rem;
 	padding-top: 0.5rem;
-	
+
 	border: solid 2px #000BA0;
 	background-size: 20px 20px;
 	background-image:
@@ -88,7 +88,7 @@ h1 {
 
 
 .simplicity {
-	
+
 	-webkit-text-fill-color: white;
 	-webkit-text-stroke-width: 2px;
 	-webkit-text-stroke-color: #007A37;
@@ -98,17 +98,15 @@ h1 {
 
 	&:hover {
 		-webkit-text-fill-color: #007A37;
-		
+
 	}
 }
 
-.chaos{
+.chaos {
 	color: #870054;
 
 
 	font-size: 62px;
-
-
 	letter-spacing: -8.7px;
 
 	font-family: "Rubik Glitch", system-ui;
@@ -127,19 +125,35 @@ h1 {
 
 		letter-spacing: -18.7px;
 
-	
+
 	}
 
 }
 
 
+@media (min-width:668px){
+	h1{
+	font-size: 60px;
+	line-height: 90px;
+	margin-bottom: 126px;
+	margin-top: 54px;
+	padding-inline: 100px;
+	}
 
+	.container-h2{
+		padding-inline: 100px;
+		margin-bottom: 80px;
+	}
 
+	.chaos{
+		font-size: 80px;
+		line-height: 100px;
+	}
+}
 
-@media (min-width: 1512px) {
-
-	.balance{
-		padding-block:44px;
+@media (min-width:1100px) {
+	.balance {
+		padding-block: 24px;
 	}
 
 	.structure {
@@ -152,7 +166,7 @@ h1 {
 		background-image:
 			linear-gradient(to right, var(--title2-bg) 1px, transparent 1px),
 			linear-gradient(to bottom, var(--title2-bg) 1px, transparent 1px);
-	
+
 		&:hover {
 			background-color: #000BA0;
 			color: var(--white);
@@ -161,19 +175,19 @@ h1 {
 	}
 
 	.simplicity {
-	
+
 		-webkit-text-fill-color: white;
 		-webkit-text-stroke-width: 4px;
 		-webkit-text-stroke-color: #007A37;
-	
+
 		border-bottom: solid 4px #007A37;
-	
+
 	}
 
-	.chaos{
-	
+	.chaos {
+
 		font-size: 110px;
-	
+
 	}
 
 	h1 {
@@ -197,17 +211,12 @@ h1 {
 	}
 
 	.colophone {
-		width: 50%;
-		font-size: 20px;
-		line-height: 34px;
-	}
-
-	.create {
 		width: 60%;
 	}
 
-	
-
+	.create {
+		width: 40%;
+	}
 
 
 	/* alignment of H1 */
@@ -226,7 +235,7 @@ h1 {
 		display: flex;
 		flex-direction: row;
 		gap: 50px;
-		padding-left: 20%;
+		margin-inline: auto;
 		margin-top: 56px;
 	}
 
@@ -243,6 +252,52 @@ h1 {
 	article {
 		display: flex;
 		justify-content: space-between;
+		gap: 42px;
+	}
+
+}
+
+
+
+@media (min-width: 1440px) {
+
+
+	/* margins, paddings */
+
+	.balance {
+		padding-block: 44px;
+	}
+
+
+	.colophone {
+		width: 50%;
+		font-size: 20px;
+		line-height: 34px;
+	}
+
+	.create {
+		width: 60%;
+	}
+
+
+	/* alignment of H1 */
+
+
+
+	.align-3 {
+		display: flex;
+		flex-direction: row;
+		gap: 50px;
+		padding-left: 20%;
+		margin-top: 56px;
+	}
+
+
+
+	/* locating containers */
+
+	article {
+
 		gap: 52px;
 	}
 

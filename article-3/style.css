@@ -55,17 +55,17 @@ quote {
 	justify-content: flex-start;
 	gap: 0.5rem;
 
-	&>:nth-child(1){
+	&>:nth-child(1) {
 		transform: rotate(-10deg);
 		color: #F600C5;
 	}
 
-	&>:nth-child(2){
+	&>:nth-child(2) {
 		transform: rotate(5deg);
 		color: #F00;
 	}
 
-	&>:nth-child(3){
+	&>:nth-child(3) {
 		transform: rotate(-5deg);
 		color: #009502;
 	}
@@ -221,44 +221,79 @@ quote {
 
 }
 
-@media (min-width: 1512px) {
-	
+@media (min-width:668px){
+	.special-h1{
+		font-size: 100px;
+	}
+
+	.title-2{
+		font-size: 60px;
+		line-height: 70px;
+	}
+	.special-highlight{
+		padding-inline: 11px;
+	}
+
+	.block-quotes {
+		border: 6px solid var(--main-color-1);
+		border-style: solid double dashed;
+		margin-inline: 100px;
+		font-size: 26px;
+		line-height: 40px;
+
+		padding: 44px;
+		margin-block: 75px;
+	}
+	.random-words{
+		margin-inline: 100px;
+		font-size: 44px;
+	}
+
+	.punk{
+		margin-inline: 100px;
+		font: 44px;
+	}
+
+
+}
+
+@media (min-width: 1100px) {
 
 	.balance {
 		width: 20%;
-		height: 300px;
+		height: 200px;
 		border-radius: 50%;
 		margin: auto;
 
-		background-image: radial-gradient(circle at center center, #8d0158, #ffffff), repeating-radial-gradient(circle at center center, #8d0158, #8d0158, 40px, transparent 80px, transparent 40px);
+		background-image: radial-gradient(circle at center center, #8d0158, #ffffff), repeating-radial-gradient(circle at center center, #8d0158, #8d0158, 30px, transparent 60px, transparent 30px);
 		background-blend-mode: multiply;
 	}
 
 	.punk {
 		margin: auto;
-		font-size: 100px;
-		line-height: 120px;
+		font-size: 80px;
+		line-height: 100px;
 	}
 
 	.random-words {
 		text-align: center;
 		margin: auto;
-		font-size: 100px;
-		line-height: 120px;
+		font-size: 80px;
+		line-height: 100px;
 
 		display: flex;
 		flex-direction: column;
 
 
-		&>:nth-child(1){
+		&>:nth-child(1) {
 			transform: rotate(-10deg);
 		}
 
-		&>:nth-child(2){
+		&>:nth-child(2) {
 			transform: rotate(10deg);
 		}
 
-		&>:nth-child(3){
+		&>:nth-child(3) {
 			transform: rotate(10deg);
 		}
 	}
@@ -266,8 +301,8 @@ quote {
 
 
 	.title-2 {
-		font-size: 80px;
-		line-height: 90px;
+		font-size: 70px;
+		line-height: 80px;
 
 		border: 8px var(--main-color-1);
 		border-style: solid double dashed;
@@ -277,7 +312,7 @@ quote {
 
 		transform: rotate(-10deg);
 
-		font-size: 140px;
+		font-size: 130px;
 
 		letter-spacing: -18.7px;
 
@@ -297,16 +332,46 @@ quote {
 
 	.special-highlight {
 		margin-left: 0.5rem;
+		padding-inline: 0px;
 	}
 
 	.block-quotes {
-		border: 6px solid var(--main-color-1);
-		border-style: solid double dashed;
 		margin-inline: auto;
-		font-size: 26px;
-		line-height: 40px;
-
-		padding: 44px;
-		margin-block: 75px;
 	}
+}
+
+@media (min-width: 1440px) {
+
+
+	.balance {
+		height: 300px;
+
+		background-image: radial-gradient(circle at center center, #8d0158, #ffffff), repeating-radial-gradient(circle at center center, #8d0158, #8d0158, 40px, transparent 80px, transparent 40px);
+		background-blend-mode: multiply;
+	}
+
+	.punk {
+		font-size: 100px;
+		line-height: 120px;
+	}
+
+	.random-words {
+
+		font-size: 100px;
+		line-height: 120px;
+
+	}
+
+
+
+	.title-2 {
+		font-size: 80px;
+		line-height: 90px;
+
+	}
+
+	.special-h1 {
+		font-size: 140px;
+	}
+
 }
