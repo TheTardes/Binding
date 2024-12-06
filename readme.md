@@ -4,7 +4,7 @@ Year: 2024
 School: Parsons the New School
 Created by: Inji Mammadli
 
-Overview
+## Overview
 
 Equilibrium is a  website designed to explore the balance between structure, simplicity, and chaos in design. Three articles have been used to form the concept: 
 
@@ -14,19 +14,19 @@ Equilibrium is a  website designed to explore the balance between structure, sim
 
 The website reflects the idea that design is not about choosing one approach but finding harmony between these opposing forces.
 
-Features:
+## Features
 
-	•	Fully responsive design for seamless viewing across devices (desktop, tablet, and mobile).
-	•	Accessible and clean navigation for an intuitive user experience.
-	•	Visual and typographic styles that reflect the balance of structure, simplicity, and chaos - my concept.
+	•Fully responsive design for seamless viewing across devices (desktop, tablet, and mobile).
+	•Accessible and clean navigation for an intuitive user experience.
+	•Visual and typographic styles that reflect the balance of structure, simplicity, and chaos - my concept.
 
-Tools:
-	•	HTML: For semantic structure and content organization.
-	•	CSS: For styling, including CSS Grid and Flexbox for layout.
-	•	Responsive Design: Media queries to ensure the site looks great on all screen sizes.
+## Tools
+	•HTML: For semantic structure and content organization.
+	•CSS: For styling, including CSS Grid and Flexbox for layout.
+	•Responsive Design: Media queries to ensure the site looks great on all screen sizes.
 
 
-Concept and Inspiration
+## Concept and Inspiration
 
 The concept of Equilibrium was inspired by the idea that design is a balance of diverse forces:
 	- Structure is order and stability (Modernist Grid).
@@ -34,18 +34,4 @@ The concept of Equilibrium was inspired by the idea that design is a balance of 
 	- Chaos is energy and creativity (Cult of the Ugly).
 
 I chose this concept to explore how these elements coexist and influence each other in design, pushing beyond traditional boundaries to create something dynamic and meaningful. This project represents my interpretation of design as a balance of  many things.
-
-
-
-Resources:
-
-Modernist Grid
-“Modernist Grid.” Reading Design. Available at: https://www.readingdesign.org/modernist-grid
-
-Towards a Complex Simplicity
-Bierut, Michael. “Towards a Complex Simplicity.” Eye Magazine. Available at: https://www.eyemagazine.com/feature/article/towards-a-complex-simplicity
-
-Cult of the Ugly
-Poynor, Rick. “Cult of the Ugly.” Eye Magazine. Available at: https://www.eyemagazine.com/feature/article/cult-of-the-ugly
-
 
