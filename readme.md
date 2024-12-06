@@ -1,4 +1,4 @@
-Projext name: Binding
+# Binding
 Course: Typography and Interaction - 1
 Year: 2024
 School: Parsons the New School
