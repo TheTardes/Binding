@@ -3,9 +3,6 @@
 	--title2-bg: #CECECE;
 	--highlight-sm: #000BA0;
 	--main-color-1: #000BA0;
-	--bg-color-1: #EEF5FF;
-
-	background-color: var(--bg-color-1);
 }
 
 
@@ -14,10 +11,7 @@ h1 {
 	color: var(--main-color-1);
 }
 
-.h2-landing-sm {
-	color: var(--main-color-1);
-	border-color: var(--main-color-1);
-}
+
 
 .title-2 {
 	border-block: 2px solid var(--main-color-1);
